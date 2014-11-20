@@ -1,0 +1,36 @@
+// Import the IBM Color Palette
+@import '../variables/colors';
+
+//////////////////////////////
+// Color Palette
+//
+// Gets the specified color from the color palette
+//
+// Usage:
+//
+// background: color(blue, 80); // #1D3649
+// background: color(blue);     // #4178BE
+//////////////////////////////
+@function color($color, $tone: 'core') {
+  @return map-get(map-get($__color-palette, $color), $tone);
+}
+
+//////////////////////////////
+// Get Colors
+//
+// Lists out available colors
+//////////////////////////////
+@function get-colors($color: null) {
+  // Return a list of colors available if nothing is passed in
+  @if $color == null {
+    @return map-keys($__color-palette);
+  }
+  // Return the full color map if 'all' is passed in
+  @else if $color == 'all' {
+    @return $__color-palette;
+  }
+  // Return just the color map if a specific color is passed in
+  @else {
+    @return map-get($__color-palette, $color);
+  }
+}
