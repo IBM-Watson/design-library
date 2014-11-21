@@ -24,5 +24,7 @@ Vagrant.configure(VAGRANTFILE_API_VERSION) do |config|
   # Set up Vagrant folder to be NFS and provide it a private network
   config.vm.synced_folder '.', '/vagrant', disabled: true
   config.vm.synced_folder 'patterns', '/crick/patterns'
+  config.vm.synced_folder 'library', '/crick/library'
+  config.vm.synced_folder '.www', '/crick/www'
   config.vm.network :private_network, ip: '172.10.10.10'
 end

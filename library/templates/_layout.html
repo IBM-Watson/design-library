@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  {# Viewport #}
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  {# Page Title -#}
+  <title>Crick{% block title %} Patterns{% endblock %}</title>
+
+  {# CSS -#}
+  {% block css %}
+  <link rel="stylesheet" href="/css/crick.css">
+  {% endblock %}
+
+</head>
+<body>
+
+  {# Page Heading -#}
+  <header library-class="heading">
+    {% block navigation %}{% endblock %}
+  </header>
+
+  {# Page Body -#}
+  <main library-class="body">
+    {% block content %}{% endblock %}
+  </main>
+
+  {# JavaScript -#}
+  {% block javascript %}{% endblock %}
+
+</body>
+</html>

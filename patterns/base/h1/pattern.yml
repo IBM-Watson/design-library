@@ -1,0 +1,6 @@
+name: Heading Level 1
+description: First level heading for associated section
+displayTemplate: pattern
+variables:
+  header:
+    text: Header 1
