@@ -1,0 +1,12 @@
+%base--input {
+  @extend %font--sans;
+  border: 1px solid $input-border--color;
+  font-size: 1em;
+  padding: $input-padding;
+  width: 100%;
+
+  &:focus {
+    box-shadow: inset 0 0 0 2px $input-border--color;
+    outline: none;
+  }
+}
