@@ -10,3 +10,8 @@
 @import 'functions';
 @import 'mixins';
 @import 'extends';
+
+body {
+  @extend %font--sans;
+  font-weight: 300;
+}
