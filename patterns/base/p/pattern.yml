@@ -1,0 +1,7 @@
+name: Paragraph
+description: The <p> element should not be used when a more specific element is more appropriate. 
+
+displayTemplate: pattern
+variables:
+  header:
+    text: Paragraph
