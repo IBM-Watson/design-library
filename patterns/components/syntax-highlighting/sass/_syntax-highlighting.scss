@@ -1,0 +1,72 @@
+// @import '../../../core/sass/core';
+
+@import 'partials/vars';
+@import 'partials/settings';
+@import 'partials/mixins';
+@import 'partials/extends';
+
+code[class*="language-"],
+pre[class*="language-"] {
+	color: #F9F9F9;
+
+:not(pre) > code[class*="language-"],
+pre[class*="language-"] {
+	background: #464646;
+}
+
+.token.comment,
+.token.prolog,
+.token.doctype,
+.token.cdata {
+	color: #C7C7C7;
+}
+
+.token.punctuation {
+	color: #F9F9F9;
+}
+
+.token.property,
+.token.tag,
+.token.constant,
+.token.symbol,
+.token.deleted {
+	color: #FF9EEE;
+}
+
+.token.boolean,
+.token.number {
+	color: #D7AAFF;
+}
+
+.token.selector,
+.token.attr-name,
+.token.string,
+.token.char,
+.token.builtin,
+.token.inserted {
+	color: #B4E051;
+}
+
+.token.operator,
+.token.entity,
+.token.url,
+.language-css .token.string,
+.style .token.string,
+.token.variable {
+	color: #FFA5B4;
+}
+
+.token.atrule,
+.token.attr-value,
+.token.function {
+	color: #FDD600;
+}
+
+.token.keyword {
+	color: #66d9ef;
+}
+
+.token.regex,
+.token.important {
+	color: #FFA573;
+}

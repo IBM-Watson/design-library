@@ -1,0 +1,8 @@
+<ul role="radiogroup" class="base--radiogroup">
+  {% for radio in radios %}
+  {% set radio = {id: 'radio-' + loop.index, label: radio} %}
+  <li class="radiogroup--item">
+    {% pattern radio from base %}
+  </li>
+  {% endfor %}
+</ul>

@@ -1,0 +1,4 @@
+name: Syntax Highlighting
+description: Colors for highlighting syntax
+displayTemplate: pattern
+variables:
