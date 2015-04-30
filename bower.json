@@ -1,6 +1,6 @@
 {
   "name": "watson-design-library",
-  "version": "1.0.0-beta.2",
+  "version": "1.0.0-beta.3",
   "homepage": "https://github.com/IBM-Watson/design-library",
   "authors": [
     "Sam Richard <sam.richard@us.ibm.com>",
@@ -23,7 +23,7 @@
   ],
   "dependencies": {
     "sass-toolkit": "~2.9.0",
-    "ibm-colors": "~1.2",
+    "ibm-colors": "~1.3",
     "modular-scale": "~2.0.7",
     "breakpoint-sass": "~2.5.0"
   }

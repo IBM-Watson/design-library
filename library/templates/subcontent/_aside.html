@@ -1,0 +1,6 @@
+{% macro aside(content) %}
+  <aside library-class="aside">
+    {{ content.description|markdown | safe -}}
+  </aside>
+{% endmacro %}
+

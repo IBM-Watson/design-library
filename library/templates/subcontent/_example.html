@@ -1,0 +1,45 @@
+{% import './_media.html' as media %}
+
+<!-- Sentiment Builder -->
+{% macro sentiment(example) %}
+  {% if example.sentiment %}
+    {% if feels|lower === 'positive' %}
+      <span library-class="example--positive">Do This</span>
+    {% elseif feels|lower === 'negative' %}
+      <span library-class="example--negative">Don't Do This</span>
+    {% endif %}
+  {% endif %}
+{% endmacro %}
+
+<!-- Example Title -->
+{% macro title(example) %}
+  <p library-class="example--title">{{ sentiment(example) }}{{ example.title }}</p>
+{% endmacro %}
+
+<!-- Small Example -->
+{% macro small(example) %}
+<div library-class="example--SMALL">
+  {{ title(example) }}
+  {{ media.object(example) }}
+</div>
+{% endmacro %}
+
+<!-- Large Example -->
+{% macro large(example) %}
+<div library-class="example--LARGE">
+  {{ media.object(example) }}
+  <div library-class="example--body">
+    {{ title(example) }}
+    {% if example.description %}
+      <p library-class="example--description">{{ example.description }}</p>
+    {% endif %}
+  </div>
+</div>
+{% endmacro %}
+
+<!-- Compare examples -->
+{% macro compare(examples) %}
+  {% for example in examples %}
+    {{ small(example) }}
+  {% endfor %}
+{% endmacro %}

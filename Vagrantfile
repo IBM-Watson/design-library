@@ -36,6 +36,9 @@ Vagrant.configure(VAGRANTFILE_API_VERSION) do |config|
   config.vm.synced_folder 'library', '/crick/library',
       type: synced_folder_type,
       mount_options: ['rw', 'vers=3', 'tcp', 'actimeo=1']
+  config.vm.synced_folder 'language', '/crick/language',
+      type: synced_folder_type,
+      mount_options: ['rw', 'vers=3', 'tcp', 'actimeo=1']
   config.vm.synced_folder 'bower_components', '/crick/bower_components',
       type: synced_folder_type,
       mount_options: ['rw', 'vers=3', 'tcp', 'actimeo=1']

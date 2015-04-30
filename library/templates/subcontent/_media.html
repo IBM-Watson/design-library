@@ -1,0 +1,15 @@
+<!-- Display Object -->
+{% macro object(media) %}
+  <div library-class="media">
+    {% if media.visualDisplay|fileType === 'image' %}
+      <img library-class="media--image" src="{{ media.visualDisplay }}" alt="{{ media.title }}">
+    {% elseif media.visualDisplay|fileType === 'video' %}
+      <video library-class="media--video" controls loop>
+        <source src="{{ media.visualDisplay }}" type="video/{{ media.visualDisplay|fileExtension }}">
+        <div class="base--STYLED">
+          <p><a href="{{ media.visualDisplay }}">Download video <strong>{{ media.title }}</strong></a></p>
+        </div>
+      </video>
+    {% endif %}
+  </div>
+{% endmacro %}

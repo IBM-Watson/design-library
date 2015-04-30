@@ -1,0 +1,23 @@
+{% import './_media.html' as media %}
+
+{% macro view(detail) %}
+  <div library-class="detail">
+    <div library-class="detail--display">
+      {{ media.object(detail) }}
+    </div>
+    <div library-class="detail--details">
+      {% if detail.description %}
+      <div library-class="detail--description">
+        {{ detail.description|markdown | safe -}}
+      </div>
+      {% endif %}
+      <dl library-class="detail--callouts">
+        {% for callout in detail.callouts %}
+        <dt library-class="detail--callout-title"><span library-class="detail--counter" aria-hidden>{{ loop.index }}</span>{{ callout.title }}</dt>
+        <dd library-class="detail--callout-description">{{ callout.description }}</dd>
+        {% endfor %}
+      </dl>
+        }
+    </div>
+  </div>
+{% endmacro %}

@@ -1,0 +1,48 @@
+<!-- Swatchs -->
+{% macro swatchWithAttribute(color) %}
+  <div library-class="color-swatch--ATTRIBUTES">
+    <span library-class="color-swatch--swatch" style="background: {{ color.palette|ibmHex(color.tone) }}"></span>
+    <div library-class="color-swatch--info">
+      <p library-class="color-swatch--name">{{ color.palette }} {{ color.tone }}</p>
+      {% if color.adjectives %}
+      <ul library-class="color-swatch--attributes">
+        {% for adjective in color.adjectives %}
+        <li>{{ adjective }}</li>
+        {% endfor %}
+      </ul>
+      {% endif %}
+    </div>
+  </div>
+{% endmacro %}
+
+{% macro swatch(color) %}
+  <div library-class="color-swatch" style="background: {{ color.palette|ibmHex(color.tone) }}; color: {{color.tone|ibmTextColor }};">
+    <p library-class="color-swatch--name">{{ color.palette }} {{ color.tone }}</p>
+    <ul library-class="color-swatch--attributes">
+      <li>{{ color.palette|ibmSass(color.tone) }}</li>
+      <li>{{ color.palette|ibmHex(color.tone) }}</li>
+      <li>{{ color.palette|ibmRGB(color.tone) }}</li>
+    </ul>
+  </div>
+{% endmacro %}
+
+<!-- Swatch Groupings -->
+
+{% macro adjectiveSwatches(colors) %}
+<div library-class="color-grouping--ADJECTIVES">
+  {% for color in colors.colors %}
+  {{ swatchWithAttribute(color) }}
+  {% endfor %}
+</div>
+{% endmacro %}
+
+{% macro groupSwatches(colors) %}
+<div library-class="color-grouping">
+  <p library-class="color-grouping--instructions">{{ colors.instructions }}</p>
+  <div library-class="color-grouping--swatches">
+    {% for color in colors.colors %}
+    {{ swatch(color) }}
+    {% endfor %}
+  </div>
+</div>
+{% endmacro %}

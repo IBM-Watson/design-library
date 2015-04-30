@@ -1,0 +1,22 @@
+{% macro cite(quote) %}
+  <footer library-class="quote--footer">
+    <cite library-class="quote--cite">
+      {% if quote.linkToSource %}
+      <a href="{{quote.linkToSource}}">
+      {% endif %}
+      {{ quote.citation }}
+      {% if quote.linkToSource %}
+      </a>
+      {% endif %}
+    </cite>
+  </footer>
+{% endmacro %}
+
+{% macro quote(quote) %}
+  <blockquote library-class="quote">
+    <div class="base--STYLED">
+      {{ quote.quote|markdown | safe -}}
+    </div>
+    {{ cite(quote) }}
+  </blockquote>
+{% endmacro %}
