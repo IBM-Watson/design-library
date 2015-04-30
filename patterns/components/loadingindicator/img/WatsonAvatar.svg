@@ -1,0 +1,256 @@
+<svg version="1.1" id="svg-all" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="-10 -10 300 300" preserveAspectRatio="xMidYMid meet" >
+    <path id="orbit-5" fill="none" stroke="#4A90E2" stroke-width="9" stroke-miterlimit="10" stroke-dasharray="1000" stroke-dashoffset="1000" stroke-linecap="round" d="M140.8,250.6c61.9,0,112-50.1,112-112
+	s-50.1-112-112-112c-23,0-44.3,6.9-62.1,18.8c-30.1,20.1-49.9,54.3-49.9,93.2C28.8,200.4,78.9,250.6,140.8,250.6z" />
+    <path id="orbit-4" fill="none" stroke="#4A90E2" stroke-width="9" stroke-miterlimit="10" stroke-dasharray="1000" stroke-dashoffset="1000" stroke-linecap="round" d="M144.6,160.3c5.8-0.9,11.6-1.9,17.1-3
+	c52.6-10.2,91.6-26.6,89.6-38.7c-2.1-13.4-53.4-16.4-114.5-6.7C75.8,121.5,28,140.2,30.2,153.6S83.5,169.9,144.6,160.3z" />
+    <path id="orbit-3" fill="none" stroke="#4A90E2" stroke-width="9" stroke-miterlimit="10" stroke-dasharray="1000" stroke-dashoffset="1000" stroke-linecap="round" d="M181.9,189.5c47.2-38.2,65.1-93.6,42.4-121.7
+	S144.8,47.9,97.6,86.2s-67,92-44.3,120.1C76.1,234.4,134.7,227.7,181.9,189.5z" />
+    <path id="orbit-2" fill="none" stroke="#4A90E2" stroke-width="9" stroke-miterlimit="10" stroke-dasharray="1000" stroke-dashoffset="1000" stroke-linecap="round" d="M162.2,142c13.7-59.2,14.3-109.6,1.4-112.6
+	c-12.9-3-37.3,41.9-51,101.1s-11.4,110.3,1.5,113.2C126.9,246.7,148.5,201.2,162.2,142z" />
+    <path id="orbit-1" fill="none" stroke="#4A90E2" stroke-width="9" stroke-miterlimit="10"  stroke-dasharray="988 988" stroke-dashoffset="988" stroke-linecap="round" d="M186.5,89.2c-43.7-42.2-102-54.8-126.9-29
+	c-24.9,25.8-9.7,81,34,123.2S193,238.8,217.9,213C242.8,187.2,230.2,131.4,186.5,89.2z" />
+    <circle id="exterior-stroke" fill="none" stroke="#4990E2" stroke-width="12" cx="140" cy="140" r="140" stroke-dasharray="1000" stroke-dashoffset="1000" stroke-linecap="round"></circle>
+<!-- Clipping Circle -->
+    <clipPath id="clipping">
+        <circle id="clipping-circle" fill="none" stroke="#4990E2" stroke-width="12" cx="140" cy="140" r="160" stroke-dasharray="1000" stroke-dashoffset="1000" stroke-linecap="round" />
+    </clipPath>
+
+<!-- Exit Animation -->
+<animate
+    id="clipping-circle--ani"
+    xlink:href="#clipping-circle"
+    begin="ani-exterior-stroke-complete.end+0s"
+    attributeName="r"
+    from="160"
+    to="0"
+    dur="0.2s"
+    fill="freeze"/>
+
+<animate
+    xlink:href="#exterior-stroke"
+    id="ani-exterior-stroke-complete"
+    attributeName="stroke-dashoffset"
+    from="800"
+    to="0"
+    dur="0.5s"
+    fill="freeze"
+    sum="add"
+    repeatCount="1"
+    begin="false" />
+
+
+
+<!-- Animation of the strokes Drawing On -->
+    <animate
+    xlink:href="#orbit-1"
+    attributeName="stroke-dashoffset"
+    from="1000"
+    to="0"
+    dur="1s"
+    fill="freeze"
+    begin="0.5s" />
+
+      <animate
+    xlink:href="#orbit-2"
+    attributeName="stroke-dashoffset"
+    from="1000"
+    to="0"
+    dur="1s"
+    fill="freeze"
+    begin="0.5s" />
+
+      <animate
+    xlink:href="#orbit-3"
+    attributeName="stroke-dashoffset"
+    from="1000"
+    to="0"
+    dur="1s"
+    fill="freeze"
+    begin="0.5s" />
+
+      <animate
+    xlink:href="#orbit-4"
+    attributeName="stroke-dashoffset"
+    from="988"
+    to="0"
+    dur="1s"
+    fill="freeze"
+    begin="0.5s" />
+
+    <animate
+    xlink:href="#orbit-5"
+    attributeName="stroke-dashoffset"
+    from="1000"
+    to="0"
+    dur="0.1s"
+    fill="freeze"
+    begin="0s" />
+
+<!-- Animation of the exterior progress stroke -->
+
+<!-- Exterior Stroke Drawing on -->
+    <animate
+    xlink:href="#exterior-stroke"
+    id="ani-exterior-stroke"
+    attributeName="stroke-dashoffset"
+    from="1000"
+    to="800"
+    dur="0.5s"
+    fill="freeze"
+    sum="add"
+    repeatCount="1"
+    begin="1s" />
+
+<!-- Exterior Stroke Rotation -->
+    <animateTransform
+      xlink:href="#exterior-stroke"
+      attributeName="transform"
+      attributeType="XML"
+      type="rotate"
+      from="0 140 140"
+      to="360 140 140"
+      dur="1s"
+      begin="1s"
+      repeatCount="indefinite"
+      fill="freeze"
+      sum="add"
+      />
+
+<!-- Dots animating around Orbit Rings -->
+    <circle fill="#4A90E2" cx="0" cy="0" r="15">
+        <animateMotion id="animation-1"
+        dur="1.2s"
+        repeatCount="1"
+        calcMode="spline"
+        keyTimes="0;1"
+        keyPoints="0;.5"
+        keySplines="0 0 0 1"
+        fill="freeze"
+        begin="0s" >
+		<mpath xlink:href="#orbit-1" />
+        </animateMotion>
+    </circle>
+
+    <circle fill="#4A90E2" cx="0" cy="0" r="15">
+        <animateMotion
+        dur="1.4s"
+        repeatCount="1"
+        calcMode="spline"
+        keyTimes="0;1"
+        keyPoints=".8;0"
+        keySplines="0 0 0 1"
+        fill="freeze"
+        begin="0s" >
+		<mpath xlink:href="#orbit-2" />
+        </animateMotion>
+    </circle>
+
+    <circle fill="#4A90E2" cx="0" cy="0" r="15">
+        <animateMotion
+        dur="1.6s"
+        repeatCount="1"
+        calcMode="spline"
+        keyTimes="0;1"
+        keyPoints=".5;0"
+        keySplines="0 0 0 1"
+        fill="freeze"
+        begin="0s">
+		<mpath xlink:href="#orbit-3" />
+        </animateMotion>
+    </circle>
+
+    <circle fill="#4A90E2" cx="0" cy="0" r="15">
+        <animateMotion
+        dur="1.6s"
+        repeatCount="1"
+        calcMode="spline"
+        keyTimes="0;1"
+        keyPoints="0;.6"
+        keySplines="0 0 0 1"
+        fill="freeze"
+        begin="0s">
+		<mpath xlink:href="#orbit-4" />
+        </animateMotion>
+    </circle>
+
+    <circle fill="#4A90E2" cx="0" cy="0" r="11">
+        <animateMotion
+        dur="1.4s"
+        repeatCount="1"
+        calcMode="spline"
+        keyTimes="0;1"
+        keyPoints="0;1"
+        keySplines="0 0 0 1"
+        fill="freeze"
+        begin="0s">
+        <mpath xlink:href="#orbit-4" />
+        </animateMotion>
+    </circle>
+
+<defs>
+
+<!-- CSS Styling Animation -->
+<style type="text/css"><![CDATA[
+
+#svg-all {
+animation: scale .5s;
+animation-iteration-count: 1;
+animation-fill-mode: forwards;
+transform-origin: 50% 50%;
+clip-path: url(#clipping);
+
+
+-webkit-animation: scale .5s;
+-webkit-animation-iteration-count: 1;
+-webkit-animation-fill-mode: forwards;
+-webkit-transform: scale(.5);
+-webkit-transform-origin: 50% 50%;
+
+-ms-transform: scale(.5);
+-ms-transform-origin: 50% 50%;
+      }
+
+@-webkit-keyframes scale {
+  0% {
+    -webkit-transform: scale(0);
+            transform: scale(0); }
+
+  100% {
+    -webkit-transform: scale(1);
+            transform: scale(1);
+    -webkit-animation-timing-function: cubic-bezier(1, .03, 1, .44);
+            animation-timing-function: cubic-bezier(1, .03, 1, .44); } }
+
+@keyframes scale {
+  0% {
+    -webkit-transform: scale(0);
+            transform: scale(0); }
+
+  100% {
+    -webkit-transform: scale(1);
+            transform: scale(1);
+    -webkit-animation-timing-function: cubic-bezier(1, .03, 1, .44);
+            animation-timing-function: cubic-bezier(1, .03, 1, .44); } }
+
+          
+ ]]></style> 
+
+    <!-- js to end animation -->
+    <script><![CDATA[
+        // this triggers the resolving animation (click for now)
+        var thisSvgElem = document.getElementById('svg-all');
+
+
+        thisSvgElem.addEventListener("click", svgClickFunc);
+
+        function svgClickFunc(){
+            document.getElementById('ani-exterior-stroke-complete').beginElement();
+
+            setTimeout(function(){
+                thisSvgElem.remove()}, 700);
+        }
+    ]]></script>
+  </defs>
+
+
+</svg>

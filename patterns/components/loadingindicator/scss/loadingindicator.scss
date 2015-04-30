@@ -1,0 +1,34 @@
+// @import '../../../core/sass/core';
+
+@import 'partials/vars';
+@import 'partials/settings';
+@import 'partials/mixins';
+@import 'partials/extends';
+
+.base--loader {
+	@extend %base--loader;
+}
+
+.smil {
+	& .loader--fallback {
+	display: none; 
+	}
+}
+
+.no-smil {
+	& .loader--fallback {
+		display: block;
+	}
+	& .loader--svg {
+		display: none;
+	}
+}
+
+.no-svg {
+	& .loader--fallback {
+		display: block;
+	}
+	& .loader--svg {
+		display: none;
+	}
+}
