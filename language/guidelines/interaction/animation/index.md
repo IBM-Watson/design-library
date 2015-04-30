@@ -2,20 +2,16 @@
 type: guideline
 title: "Animation"
 variables:
-  detail:
+  example:
     before:
+      title: "Before"
       visualDisplay: images/animation/before.webm
-      description: "Before"
-      callout:
-        - title: "Interfaces without animations often produce a choppy, disorienting, and confusing experience for the user."
-          description: "An example of an interface that does not use animations."
-  detail:
+      description: "Interfaces without animations often produce a choppy, disorienting, and confusing experience for the user."
+  example:
     after:
+      title: "After"
       visualDisplay: images/animation/after.webm
-      description: "After"
-      callout:
-        - title: "Interfaces with animations provide orientation and guidance for the user and make for a more pleasant experience."
-          description: "An example of an interface that uses animations."
+      description: "Interfaces with animations provide orientation and guidance for the user and make for a more pleasant experience."
 ---
 Motion is a fundamental element of user experience design because it demonstrates the emotional quality and vitality of the product. It gives non-verbal communication to the user and can be thought of as the product's body language. Within software, motion is conveyed through the process of animation—"the illusion of movement through a sequence of images."
 
