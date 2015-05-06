@@ -63,11 +63,11 @@ Use bounce eases to add the snap-in factor that is typically achieved with multi
 
 ### Multiple Property Animations
 
-Multiple property animations are animations where multiple properties are being animated together. With multiple property animations there are two different options. The first option is to start one property alone, then animate any additional properties. The second option is for both properties to start at the same time, then have one property end before the other. We recommend not starting and stopping multiple properties at the same time; choose one option or the other.
+Multiple property animations are animations where multiple properties are being animated together. With multiple property animations there are two diretions on can take: Direction 1 - Start one property alone, then animate the additional properties, or Direction 2 - Both properties start at the same time, then one property ends before the other. We recommend not starting and stopping multiple properties at the same time; choose one or the other.
 
-**Option One**
+**Direction 1**
 
-Start one property alone, then animate any additional properties.
+Start one property alone, then animate the additional properties.
 
 ![Scaling box animation starting with X axis scale then the Y axis scale follows.](images/motion/examples/Option-A.gif)
 
@@ -92,7 +92,7 @@ Start one property alone, then animate any additional properties.
 }
 ```
 
-**Option Two**
+**Direction 2**
 
 Both properties start at the same time, then one property ends before the other.
 
@@ -125,7 +125,7 @@ Both properties start at the same time, then one property ends before the other.
 
 **Timing Function**
 
-Use snap-in eases to add very strong eases to quick movements. This enhances the metaphor of elegant machine motion.
+Use snap in eases to add very strong eases to quick movements. This enhances the metaphor of elegant machine motion.
 
 * Use of Timing Functions: 
   * **Entrances** - `map-get($timing-function, snap-in)` (Fast to Slow) 
@@ -135,27 +135,27 @@ Use snap-in eases to add very strong eases to quick movements. This enhances the
 
 ## Singular vs. Sequence of Actions
 
-Within user interfaces, there are instances where only one element moves, as well as instances when multiple elements create a sequence of actions.
+Within user interfaces, there are instances where only one element moves, as well as instances when multiple elements create a sequence of actions. The guidelines for both kind of instances are listed below.
 
 
 ### Singular Action
 
-A singular action animation occurs when only one element on the screen is animated and there are no other complementary elements.
+A singular action animation occurs when only one element on the screen is animated, and there are no other complementary elements.
 
 ![Singular action shows a box animating scaling horizontally then vertically](images/motion/examples/Option-B.gif)
 
 ### Sequence of Actions
 
-A sequence of actions animation occurs when there are multiple animated elements. This is typically a primary action followed by a secondary action that complements the primary.
+A _sequence of actions_ animation occurs when there are multiple animated elements. This is typically a primary action followed by a secondary action that complements the primary.
 
 ![Secondary action shows a box animating scaling horizontally then vertically with text animating up following the vertical scale](images/motion/examples/secondary-action.gif)
 
 In the example above, the text animations and delay enhance the animation by following the lead of the primary action, which in this case is the scaling of the box.
 
-#### Things to Consider with Sequence of Actions
+#### Things to consider with Sequence of Actions
 
-  * Choreography: elements should coordinate within the determined hierarchy.
-  * Delays: delays need to be consistent and should have the same rate across similar content.
+  * Choreography: Elements should coordinate within the determined hierarchy.
+  * Delays: Delays need to be consistent and should have the same rate across similar content.
 
 ## Animation Library Implementation
 
@@ -190,7 +190,7 @@ $animations: (
 );
 ```
 
-This is the format of the map, and everything between <> is a string:
+This is the format of the map, with everything between <> being a string:
 
 ```scss
 $animations: (
@@ -205,11 +205,11 @@ $animations: (
 );
 ```
 
-In order to use any of these animations in a product, we have implemented an animate Sass mixin. To include animation with an element, use the following syntax: `@include animate(<animation name>, <duration>, <timing function>)`. We have included defaults for duration (2s) and timing function (ease-in), in case you do not specify your own.
+In order to use any of these animations in a product, we have implemented an animate Sass mixin. To include the animation on the element, use the following syntax: `@include animate(<animation name>, <duration>, <timing function>)`. If you do not specify duration and timing function, we have included the default values of 2s and ease-in.
 
 For example, you can implement `@include animate('fade-in');` or `@include animate(fade-in, 3s, snap-in);`.
 
-We currently provide these animations:
+The current animations provided are:
 
 Entrance Animations
 - `fade-in`
@@ -235,9 +235,7 @@ Exit Animations
 
 ### Timing Functions
 
-A timing function is a mathematical equation that creates a bezier curve, which is a line that defines the acceleration pattern on a graph. Bezier curves are often translated to keywords like ease-in, ease-out, and ease-in-out. They are also referred to as “Motion Curves” or “Curves."
-
-We currently provide these timing functions:
+The current timing functions provided are:
 
 - `ease-in`
 - `ease-out`
@@ -247,4 +245,6 @@ We currently provide these timing functions:
 - `snap-in`
 - `snap-out`
 - `snap-in-out`
+
+A timing function is a mathematical equation that creates a bezier curve, which is a line that defines the acceleration pattern on a graph. Bezier curves are often translated to keywords like ease-in, ease-out, and ease-in-out. They are also referred to as “Motion Curves” or “Curves."
 
