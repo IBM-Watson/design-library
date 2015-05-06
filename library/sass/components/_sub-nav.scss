@@ -1,0 +1,57 @@
+._library--sub-nav{
+  background: $sub-nav-background;
+
+  @include breakpoint($sub-nav-left){
+    width: 15.625em;
+    margin-left: 2em;
+    position: fixed;
+    top: 55px;
+  }
+}
+
+.sub-nav--container{
+  list-style-type: none;
+  margin: 0;
+  padding: 1em 0;
+}
+
+.category{
+  margin-bottom: 1em;
+
+  &:last-child{
+    margin-bottom: 0;
+  }
+}
+
+.category--title{
+  padding: 0 1.5em;
+  font-weight: $bold;
+  color: $category-title;
+}
+
+.category--container{
+  padding-left: 0;
+  list-style-type: none;
+}
+
+.category--item-link{
+  color: $category-item;
+  display: block;
+  cursor: pointer;
+  padding-left: 1.1875em;
+  border-left: 0.3125em solid $sub-nav-background;
+
+  &:hover{
+    background: $category-item-background-highlight;
+    border-left: 0.3125em solid $category-item;
+  }
+
+  &.active{
+    color: $category-item-active;
+    font-weight: $bold;
+    background: $category-item-background-highlight;
+    border-left: 0.3125em solid $header-nav-active;
+  }
+
+
+}

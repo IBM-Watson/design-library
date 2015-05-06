@@ -1,1 +1,10 @@
 @import '../../patterns/watson-patterns';
+
+// @import "../../bower_components/ibm-colors/ibm-colors";
+// @import "../../bower_components/breakpoint-sass/stylesheets/breakpoint";
+// @import "../../bower_components/sass-toolkit/stylesheets/toolkit";
+
+@import "global/variable";
+@import "global/layout";
+
+@import "components/heading";

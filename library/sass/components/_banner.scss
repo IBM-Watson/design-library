@@ -1,0 +1,35 @@
+._library--banner{
+  background: $heading-background;
+}
+
+.banner--background{
+  background: url(../images/homepagebg.png) no-repeat 12.5em 50% $heading-background;
+  background-size: 37.5em, auto, contain;
+  padding: 1em 1.5em;
+
+  @include breakpoint($banner-large){
+    background: url(../images/homepagebg.png) no-repeat 0em 50% $heading-background;
+    background-size: auto, auto, contain;
+    height: auto;
+    padding-top: 6em;
+  }
+}
+
+.banner--heading{
+  color: $banner-heading;
+  font-weight: $normal;
+  font-size: 2.441em;
+  width: 100%;
+  line-height: 1.5em;
+
+  @include breakpoint($banner-large){
+    margin-bottom: 0.5em;
+    color: $banner-heading;
+    font-weight: $normal;
+    font-size: 3.052em;
+    line-height: 1.5em;
+    margin-left: 0.5em;
+  }
+}
+
+

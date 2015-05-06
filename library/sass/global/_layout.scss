@@ -1,0 +1,35 @@
+html{
+  min-height: 100%;
+  position: relative;
+}
+
+body{
+  margin: 0;
+  font-family: "Helvetica Neue", Arial, sans-serif;
+  font-size: $basic-font-size;
+  font-weight: $normal;
+  line-height: 1.5em;
+  background: $library-background;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+a{
+  text-decoration: none;
+}
+
+[library-class="_library--container"]{
+  padding: 0;
+  position: relative;
+
+  @include clearfix();
+
+  @include breakpoint($content-fixed-width){
+    max-width: 68.75em;
+    margin: 0 auto;
+    position: relative;
+  }
+
+}

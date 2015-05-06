@@ -21,14 +21,19 @@
 <body>
 
   {# Page Heading -#}
-  <header library-class="heading">
-    {% if navigation.main %}
-    <nav>
-      {% for nav in navigation.main %}
-      <a href="/{{ nav.url }}" {% if nav.url === navigation.active.main %}data-state="active"{% endif %}>{{ nav.title }}</a>
-      {% endfor %}
-    </nav>
-    {% endif %}
+  <header library-class="_library--heading" role="banner">
+    <div library-class="_library--container">
+      <a library-class="wordmark" href="#" role="heading">
+        <img src="images/wordmark-header.svg" alt="IBM Watson Design Guide" />
+      </a>
+      {% if navigation.main %}
+      <nav library-class="header-nav" role="navigation">
+        {% for nav in navigation.main %}
+        <a library-class="header-nav--item" href="/{{ nav.url }}" {% if nav.url === navigation.active.main %}data-state="active"{% endif %}>{{ nav.title }}</a>
+        {% endfor %}
+      </nav>
+      {% endif %}
+    </div>
   </header>
 
   {# Page Body -#}

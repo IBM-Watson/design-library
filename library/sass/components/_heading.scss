@@ -1,0 +1,120 @@
+[library-class="_library--heading"]{
+  background: $heading-background;
+  padding: 0;
+  text-align: center;
+  padding-bottom: 1em;
+  @include clearfix();
+
+  @include breakpoint($header-nav-item-inline){
+    padding-bottom: 0em;
+  }
+
+  @include breakpoint($header-nav-right){
+    position: fixed;
+    width: 100%;
+    z-index: 100;
+    top: 0;
+  }
+
+}
+
+[library-class="wordmark"]{
+  display: block;
+  padding-top: 1em;
+  padding-bottom: 0.7em;
+
+  @include breakpoint($header-nav-right){
+    float: left;
+    padding-top: 0.8em;
+    margin-left: 2em;
+  }
+}
+
+
+[library-class="header-nav"]{
+  float: left;
+  text-align: left;
+  margin-left: 1em;
+
+  @include breakpoint($header-nav-item-inline){
+    display: inline;
+    width: 18.75em;
+    margin-left: calc((100% - 18.75em) / 2);
+    white-space: nowrap;
+  }
+
+  @include breakpoint($header-nav-item-sparse){
+    width: 70%;
+    margin-left: 15%;
+  }
+
+
+  @include breakpoint($header-nav-right){
+    float: right;
+    width: 18.75em;
+    margin-right: 2em;
+    margin-left: 0em;
+  }
+}
+
+[library-class="header-nav--item"]{
+  color: $header-nav;
+  display: block;
+  padding-top: 0.8em;
+  padding-bottom: 0.2em;
+  cursor: pointer;
+  border-bottom: 0.15em solid transparent;
+
+  @include breakpoint($header-nav-item-inline){
+    display: inline-block;
+    text-align: center;
+    padding-bottom: 0.8em;
+    width: 1/3 * 100%;
+    border-bottom: 0.3125em solid transparent;
+  }
+
+  @include breakpoint($header-nav-item-sparse){
+    width: (1/3 - 1/16) * 100%;
+    margin-left: (1/16 + 1/32) * 100%;
+
+    &:first-child{
+      margin-left: 0em;
+    }
+  }
+
+  @include breakpoint($header-nav-item-more-sparse){
+    width: (1/3 - 1/12) * 100%;
+    margin-left: (1/12 + 1/24) * 100%;
+  }
+
+  @include breakpoint($header-nav-right){
+    width: 1/3 * 100%;
+    margin-left: 0;
+  }
+
+  &:hover{
+    color: $header-nav-highlight;
+    border-bottom: 0.15em solid $header-nav-border-hover;
+
+    @include breakpoint($header-nav-item-inline){
+      border-bottom: 0.3125em solid $header-nav-border-hover;
+    }
+  }
+
+  &.active{
+    font-weight: $bold;
+    color: $header-nav-active;
+    border-bottom: 0.15em solid $header-nav-active;
+
+    @include breakpoint($header-nav-item-inline){
+      border-bottom: 0.3125em solid $header-nav-active;
+    }
+  }
+
+
+}
+
+
+
+
+

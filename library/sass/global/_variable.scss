@@ -1,0 +1,55 @@
+//Breakpoint
+$header-nav-item-inline: 300px;
+$header-nav-item-sparse: 460px;
+$header-nav-item-more-sparse: 580px;
+$header-nav-right: 700px;
+
+$banner-large: 700px;
+
+$sub-nav-left:700px;
+
+$main-content-increase-title-size: 500px;
+$main-content-right: 700px;
+$page-nav-inline: 475px;
+
+$content-fixed-width: 1100px;
+
+//typography
+$normal: 400;
+$bold: 600;
+
+$basic-font-size: 16px;
+
+//Library Colors
+$library-background: color('neutral-white', 20);
+
+//Heading Colors
+$heading-background: color('gray', 80);
+$header-nav: color('gray', 30);
+$header-nav-highlight: color('white', core);
+$header-nav-border-hover: color('neutral-white', 40);
+$header-nav-active: color('teal', 30);
+
+//Banner Colors
+$banner-heading: color('white', core);
+
+//Sub Navigation Colors
+$sub-nav-background: color('neutral-white', 40);
+$category-title: color('gray', 90);
+$category-item: color('gray', 60);
+$category-item-background-highlight: color('gray', 10);
+$category-item-active: color('teal', 60);
+
+//Main Content Colors
+$main-content-title-1: color('orange', 50);
+$main-content-link: color('teal', 60);
+$main-content-quote: color('gray', 60);
+$main-content-quote-border: color('orange', 30);
+$main-content-title-3: color('gray', 80);
+$main-content-page-nav: color('gray', 10);
+$main-content-previous-nav: color('gray', 60);
+$main-content-next-nav: color('orange', 60);
+
+//Footer Colors
+$footer-background: color('gray', 10);
+

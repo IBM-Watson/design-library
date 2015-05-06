@@ -1,0 +1,147 @@
+._library--main-content{
+
+  @include breakpoint($main-content-right){
+    width: calc(100% - 17em);
+    margin-left: 17em;
+    top: 3.4375em;
+    position: relative;
+  }
+}
+
+.main-content--container{
+  margin: 0 1.5em;
+
+  @include clearfix();
+
+  @include breakpoint($main-content-right){
+    margin-left: 3em;
+    margin-right: 2em;
+  }
+}
+
+.main-content--title-1{
+  font-size: 1.953em;
+  line-height: 1.5em;
+  margin-bottom: 1.5em;
+  font-weight: $bold;
+  color: $main-content-title-1;
+
+  @include breakpoint($main-content-increase-title-size){
+    font-size: 2.3em;
+  }
+
+}
+
+.main-content--paragraph{
+  margin-bottom: 2em;
+}
+
+.main-content--link{
+  font-weight: $bold;
+  color: $main-content-link;
+  text-decoration: underline;
+
+  &:hover{
+    color: $main-content-quote;
+    text-decoration: none;
+  }
+}
+
+.main-content--quote{
+  border-left: 0.25em solid $main-content-quote-border;
+  font-style: italic;
+  line-height: 1.5em;
+  padding: 0 1.5em;
+  margin-bottom: 2em;
+  color: $main-content-quote;
+}
+
+.quote--author{
+  font-style: normal;
+  margin-top: 1.5em;
+}
+
+.main-content--title-3{
+  font-size: 1.25em;
+  line-height: 1.5em;
+  margin-bottom: 1em;
+  font-weight: $bold;
+  color: $main-content-title-3;
+}
+
+.examples--two-columns{
+  width: 40%;
+}
+
+//back to top btn
+.main-content--back-to-top{
+  font-weight: $normal;
+  color: $main-content-previous-nav;
+  border-bottom: 1px solid $main-content-previous-nav;
+  float: right;
+  font-size: 0.8em;
+  padding-bottom: 0.2em;
+}
+
+.back-to-top--icon{
+
+}
+
+//bottom page navigaton
+.main-content--page-nav{
+  @include clearfix();
+  border-top: 2px solid $main-content-page-nav;
+  padding-top: 2em;
+  margin-top: 6em;
+}
+
+.page-nav--container{
+  float: right;
+}
+
+.page-nav--previous-nav{
+  display: block;
+  margin-right: 0;
+
+  @include breakpoint($page-nav-inline){
+    display: inline-block;
+    margin-right: 2em;
+  }
+}
+
+.page-nav--next-nav{
+  display: block;
+
+  @include breakpoint($page-nav-inline){
+    display: inline-block;
+  }
+}
+
+.previous-nav--icon{
+  font-size: 2em;
+  color: $main-content-previous-nav;
+  display: inline;
+}
+
+.previous-nav--title{
+  color: $main-content-previous-nav;
+  position: relative;
+  top: -0.5em;
+  margin-left: 0.3em;
+  display: inline;
+}
+
+.next-nav--title{
+  color: $main-content-next-nav;
+  position: relative;
+  top: -0.5em;
+  margin-right: 0.3em;
+  display: inline;
+}
+
+.next-nav--icon{
+  font-size: 2em;
+  color: $main-content-next-nav;
+  display: inline;
+}
+
