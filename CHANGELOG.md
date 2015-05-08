@@ -14,6 +14,7 @@
 * Move `_base.scss`, `_components.scss`, `_layouts.scss`, and `_core.scss` to `_index.scss` to better align with Node importing
 * Rename `crick.scss` to `_watson-patterns.scss` to distribute as a partial and align name
 * Add `library` Sass file and folder
+* Add prefixes to folders so that they display in the correct order
 
 ## v1.0.0-beta.3
 *April 28, 2015*
