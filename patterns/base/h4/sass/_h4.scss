@@ -8,4 +8,12 @@
 .base--h4,
 .base--STYLED h4 {
   @extend %base--h4;
+
+  font-size: $small-size;
+  font-weight: $normal;
+  font-style: normal;
+
+  @include breakpoint($increase-font-size){
+    font-size: $large-size;
+  }
 }

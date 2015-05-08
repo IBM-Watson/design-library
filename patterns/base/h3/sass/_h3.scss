@@ -8,4 +8,11 @@
 .base--h3,
 .base--STYLED h3 {
   @extend %base--h3;
+
+  font-size: $small-size;
+  font-weight: $bold;
+
+  @include breakpoint($increase-font-size){
+    font-size: $large-size;
+  }
 }

@@ -8,4 +8,7 @@
 .base--h5,
 .base--STYLED h5 {
   @extend %base--h5;
+
+  font-size: 1em;
+  font-weight: $bold;
 }

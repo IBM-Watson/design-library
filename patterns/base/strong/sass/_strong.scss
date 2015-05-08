@@ -8,4 +8,6 @@
 .base--strong,
 .base--STYLED strong {
   @extend %base--strong;
+
+  font-weight: 600;
 }

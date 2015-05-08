@@ -8,4 +8,8 @@
 .base--h6,
 .base--STYLED h6 {
   @extend %base--h6;
+
+  font-size: 1em;
+  font-weight: $normal;
+  font-style: normal;
 }
