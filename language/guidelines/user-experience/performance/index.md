@@ -17,6 +17,10 @@ resources:
       source: http://jankfree.org/
     - name: "Web Page Test"
       source: http://www.webpagetest.org/
+variables:
+  detail:
+    responseTimes:
+      visualDisplay: images/performance/performance1.svg
 ---
 
 Performance is an integral part of a user's experience no matter the medium that interface takes. Web delivered interfaces, native interfaces, application programming interfaces; whenever a user interacts with a product, performance always needs to be a top concern. Slow performing interfaces have been shown to [cost money and conversions](http://www.fastcompany.com/1825005/how-one-second-could-cost-amazon-16-billion-sales) and [affect a company's bottom line](https://blog.kissmetrics.com/loading-time/). More than that, performance is about respecting our users and the way humans perceive and react to the world around them.
@@ -28,6 +32,8 @@ In Jakob Nielsen's book _Usability Engineering_, he [describes three important l
 > * **0.1 second** is about the limit for having the user feel that the system is **reacting instantaneously**, meaning that no special feedback is necessary except to display the result.
 >* **1.0 second** is about the limit for the **user's flow of thought** to stay uninterrupted, even though the user will notice the delay. Normally, no special feedback is necessary during delays of more than 0.1 but less than 1.0 second, but the user does lose the feeling of operating directly on the data.
 > * **10 seconds** is about the limit for **keeping the user's attention** focused on the dialogue. For longer delays, users will want to perform other tasks while waiting for the computer to finish, so they should be given feedback indicating when the computer expects to be done. Feedback during the delay is especially important if the response time is likely to be highly variable, since users will then not know what to expect.
+
+{{ _detail.view(detail.responseTimes) }}
 
 This research, published in 1993, has since been expanded upon with [Powers of 10: Time Scales in User Experiences](http://www.nngroup.com/articles/powers-of-10-time-scales-in-ux/) which goes in to more detail about the importance of time in the user's perception of an experience. Beyond Nielsen, additional research suggests that the 10 second maximum in practice winds up being closer to **5 seconds** for many people, with [50% of mobile users exiting an application or site if it takes more than 5 seconds to load](http://e-commercefacts.com/research/2011/07/what-usrs-want-from-mobil/19986_WhatMobileUsersWant_Wp.pdf). In 2010, CA Technologies commissioned a study to [quantify how humans react to slow websites](http://www.webperformancetoday.com/2011/02/24/website-performance-web-stress/). This reaction, called *web stress*, showed that "**…participants had to concentrate up to 50% more when using badly performing websites**" and that they had "**…greater agitation and stress**" when using slow websites. The reason for this web stress is mainly because of the limits of human short-term memory; [it is pretty bad](http://www.nngroup.com/articles/website-response-times/). There are three parts of memory that humans use at any given time (not including long-term memory) that have direct effects on how we perceive performance: sensory memory, short-term memory, and working memory.
 
