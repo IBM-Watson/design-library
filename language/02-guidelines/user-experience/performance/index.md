@@ -18,7 +18,7 @@ resources:
     - name: "Web Page Test"
       source: http://www.webpagetest.org/
 variables:
-  detail:
+  example:
     framesPerSecond:
       visualDisplay: /videos/performance/performance2.webm
       title: "FPS/Hertz Comparison"
