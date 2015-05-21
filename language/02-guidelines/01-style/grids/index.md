@@ -41,7 +41,7 @@ When working with grids on the web, these additional items must be considered: t
 
 {{ _quote.quote(blockquote.quoteTwo) }}
 
-Ratios can be used to help set the tone for compositions. Choose one that makes sense for the type of content being displayed. Orderly, highly structured content or designs, like image galleries, may benefit from symmetric grids where each column is the same size. More organic content or designs, such as a mixture of text and images, may benefit from asymmetric grids where column sizes are based on a harmonic ratio scale like the golden ratio. This can be especially powerful when the ratio is shared with the chosen [typographic scale](/typography). Content or designs that are meant to be slightly chaotic may benefit from asymmetric grids where column sizes vary and are not directly tied to each other.
+Ratios can be used to help set the tone for compositions. Choose one that makes sense for the type of content being displayed. Orderly, highly structured content or designs, like image galleries, may benefit from symmetric grids where each column is the same size. More organic content or designs, such as a mixture of text and images, may benefit from asymmetric grids where column sizes are based on a harmonic ratio scale like the golden ratio. This can be especially powerful when the ratio is shared with the chosen [typographic scale](/guidelines/style/typography). Content or designs that are meant to be slightly chaotic may benefit from asymmetric grids where column sizes vary and are not directly tied to each other.
 
 ### Asymmetric Grid Examples
 
