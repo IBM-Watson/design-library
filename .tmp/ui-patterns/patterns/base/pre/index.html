@@ -1,0 +1,84 @@
+---
+name: Pre
+description: Pre-formatted text
+displayTemplate: pattern
+applicationMethods:
+  - code: .base--pre
+    description: Add this class to an element
+  - code: .base--STYLED pre
+    description: '`<pre>` tag inside a class of `.base--STYLED`'
+  - code: '%base--pre'
+    description: Extend this silent selector through Sass
+settings:
+  - setting: large typography breakpoint
+    description: Breakpoint to move from smaller to larger typography
+variables:
+  snippet: |
+    h1 {
+      font-size: ms(5);
+      font-weight: normal;
+
+      @include breakpoint($large-typography) {
+        font-size: ms(6);
+      }
+    }
+---
+<article library-class="pattern">
+  <p library-class="pattern--description">Pre-formatted text</p>
+  <div library-class="pattern--rendered">
+    <pre class="base--pre"><code class="base--code">h1 {
+  font-size: ms(5);
+  font-weight: normal;
+
+  @include breakpoint($large-typography) {
+    font-size: ms(6);
+  }
+}
+</code></pre>
+</div>
+  <div library-class="pattern--code">
+    <pre><code class="language-markup">&lt;pre class=&quot;base--pre&quot;&gt;&lt;code class=&quot;base--code&quot;&gt;h1 {
+  font-size: ms(5);
+  font-weight: normal;
+
+  @include breakpoint($large-typography) {
+    font-size: ms(6);
+  }
+}
+&lt;/code&gt;&lt;/pre&gt;
+</code></pre>
+  </div>
+  <div library-class="pattern--readme" class="base--STYLED">
+    <p>Pre formatted text, <code>&lt;pre&gt;</code>, is an example of text in which the whitespace is preserved. It is most often used with a nested <code>&lt;code&gt;</code> tag to display code blocks.</p>
+</div>
+  <aside library-class="pattern--application">
+    <header library-class="pattern--header" class="base--h3">
+      <h3>Application Methods</h3>
+    </header>
+    <ul class="base--ul">
+      
+      <li class="base--li"><code class="base--code">.base--pre</code> - <span library-class="pattern--inline-description" class="base--STYLED"><p>Add this class to an element</p>
+</span></li>
+      
+      <li class="base--li"><code class="base--code">.base--STYLED pre</code> - <span library-class="pattern--inline-description" class="base--STYLED"><p><code>&lt;pre&gt;</code> tag inside a class of <code>.base--STYLED</code></p>
+</span></li>
+      
+      <li class="base--li"><code class="base--code">%base--pre</code> - <span library-class="pattern--inline-description" class="base--STYLED"><p>Extend this silent selector through Sass</p>
+</span></li>
+      
+    </ul>
+  </aside>
+  <aside library-class="pattern--settings">
+    <header library-class="pattern--header" class="base--h3">
+      <h3>Settings</h3>
+    </header>
+    <ul class="base--ul">
+      
+      <li class="base--li"><code class="base--code">large typography breakpoint</code> - <span library-class="pattern--inline-description" class="base--STYLED"><p>Breakpoint to move from smaller to larger typography</p>
+</span></li>
+      
+    </ul>
+</aside>
+</article>
+
+

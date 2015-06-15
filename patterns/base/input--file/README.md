@@ -1,1 +1,1 @@
-Basic file input for a form.
+Basic image input for a form.

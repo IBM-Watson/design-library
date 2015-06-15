@@ -5,7 +5,7 @@
 @import 'partials/mixins';
 @import 'partials/extends';
 
-.base--file-input,
-.base--STYLED input[type="file"] {
-  @extend %base--file-input;
+.base--image-input,
+.base--STYLED input[type="image"] {
+  @extend %base--image-input;
 }

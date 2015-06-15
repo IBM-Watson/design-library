@@ -30,12 +30,12 @@ variables:
         title: "Accessible"
         visualDisplay: /images/accessibility/neutral-yes.svg
         sentiment: positive
-        description: "Primary: Blue 60, Accent: Teal 40, Neutrals: Neutral 2, Neutral 4, Gray 80"
+        description: "Primary: Blue 60, Accent: Teal 40, Neutrals: Neutral-White 2, Neutral-White 4, Gray 80"
       neutralNo:
         title: "Not Accessible"
         visualDisplay: /images/accessibility/neutral-no.svg
         sentiment: negative
-        description: "Primary: Orange 50, Neutrals: Neutral 2, Neutral 4, Gray 30"
+        description: "Primary: Orange 50, Neutrals: Neutral-White 2, Neutral-White 4, Gray 30"
 ---
 
 When choosing colors and contrast ratios for typography it is important to adhere to the [IBM Design Language recommendations for accessibility](http://www.ibm.com/design/language/framework/visual/color.shtml#contrast), as we must meet [WCAG 2.0 AA requirements](http://www.w3.org/TR/WCAG20/). High color contrast helps users who are partially or completely color blind see differences between certain colors. It creates a strong visual hierarchy and improved usability for everyone. Never rely on color as the only visual means of conveying information, indicating an action, prompting a response, or distinguishing a visual element.  

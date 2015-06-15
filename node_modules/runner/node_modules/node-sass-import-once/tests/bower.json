@@ -1,0 +1,14 @@
+{
+  "name": "tests",
+  "version": "0.1.0",
+  "homepage": "https://github.com/at-import/node-sass-import-once",
+  "authors": [
+    "Sam Richard <snugug@gmail.com>"
+  ],
+  "license": "MIT",
+  "devDependencies": {
+    "bootstrap": "~3.3.4",
+    "sass-toolkit": "~2.9.0",
+    "breakpoint-sass": "~2.5.0"
+  }
+}

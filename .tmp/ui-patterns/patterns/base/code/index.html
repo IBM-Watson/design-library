@@ -1,0 +1,65 @@
+---
+name: Code
+description: Computer code in text
+displayTemplate: pattern
+applicationMethods:
+  - code: .base--code
+    description: Add this class to an element
+  - code: .base--STYLED code
+    description: '`<code>` tag inside a class of `.base--STYLED`'
+  - code: '%base--code'
+    description: Extend this silent selector through Sass
+settings:
+  - setting: secondary color
+    description: Color of text
+  - setting: monospace font
+    description: Font family used for code
+variables:
+  snippet: '<link rel="stylesheet" href="#" />'
+---
+<article library-class="pattern">
+  <p library-class="pattern--description">Computer code in text</p>
+  <div library-class="pattern--rendered">
+    <code class="base--code">&lt;link rel=&quot;stylesheet&quot; href=&quot;#&quot; /&gt;</code>
+</div>
+  <div library-class="pattern--code">
+    <pre><code class="language-markup">&lt;code class=&quot;base--code&quot;&gt;&lt;link rel=&quot;stylesheet&quot; href=&quot;#&quot; /&gt;&lt;/code&gt;
+</code></pre>
+  </div>
+  <div library-class="pattern--readme" class="base--STYLED">
+    <p>Code text, <code>&lt;code&gt;</code>, is an example of computer code within text</p>
+</div>
+  <aside library-class="pattern--application">
+    <header library-class="pattern--header" class="base--h3">
+      <h3>Application Methods</h3>
+    </header>
+    <ul class="base--ul">
+      
+      <li class="base--li"><code class="base--code">.base--code</code> - <span library-class="pattern--inline-description" class="base--STYLED"><p>Add this class to an element</p>
+</span></li>
+      
+      <li class="base--li"><code class="base--code">.base--STYLED code</code> - <span library-class="pattern--inline-description" class="base--STYLED"><p><code>&lt;code&gt;</code> tag inside a class of <code>.base--STYLED</code></p>
+</span></li>
+      
+      <li class="base--li"><code class="base--code">%base--code</code> - <span library-class="pattern--inline-description" class="base--STYLED"><p>Extend this silent selector through Sass</p>
+</span></li>
+      
+    </ul>
+  </aside>
+  <aside library-class="pattern--settings">
+    <header library-class="pattern--header" class="base--h3">
+      <h3>Settings</h3>
+    </header>
+    <ul class="base--ul">
+      
+      <li class="base--li"><code class="base--code">secondary color</code> - <span library-class="pattern--inline-description" class="base--STYLED"><p>Color of text</p>
+</span></li>
+      
+      <li class="base--li"><code class="base--code">monospace font</code> - <span library-class="pattern--inline-description" class="base--STYLED"><p>Font family used for code</p>
+</span></li>
+      
+    </ul>
+</aside>
+</article>
+
+

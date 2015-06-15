@@ -1,0 +1,35 @@
+---
+title: Working with Settings
+resources:
+  links:
+    - name: Toolkit Settings Helpers
+      source: 'https://github.com/at-import/toolkit#settings'
+---
+<div class="base--STYLED">
+<p>The Watson Design Guide’s Pattern Library manages settings through a set of settings mixins, allowing users to work with and manipulate settings global and user settings with ease. The settings mixins being used come from <a href="https://github.com/at-import/toolkit#settings">Toolkit</a>, a dependency of the Pattern Library.</p>
+<h2 id="setting-up-a-new-project">Setting Up a New Project</h2>
+<p>Projects should be <a href="/ui-patterns/documentation/getting-started#styling-a-project">set up</a> so that Toolkit is being imported before the Pattern Library is. Settings will be set between Toolkit being imported and the Pattern Library being imported.</p>
+<h2 id="determining-a-setting-to-change">Determining a Setting to Change</h2>
+<p>Patterns include a <em>Settings</em> section that describes the settings they are using and how those settings are being used. Use the string name of the setting when changing the setting.</p>
+<h2 id="changing-settings">Changing Settings</h2>
+<p>Settings can be changed using the <code>setting-set</code> or <code>setting-set-multiple</code> mixins provided by Toolkit. The former sets a single setting while the later sets multiple settings at once. Set all custom settings before importing any part of the Pattern Library.</p>
+<pre><code class="language-scss">// Sets the Primary Color setting to IBM&#39;s Blue 60
+@include setting-set(&#39;primary color&#39;, color(&#39;blue&#39;, 60));
+
+// Sets the Primary Color setting to IBM&#39;s Blue 60 and the Secondary Color setting to IBM&#39;s Teal 60
+@include setting-set-multiple((
+  &#39;primary color&#39;: color(&#39;blue&#39;, 60),
+  &#39;secondary color&#39;: color(&#39;teal&#39;, 60)
+));
+</code></pre>
+<h2 id="using-settings">Using Settings</h2>
+<p>The functions <code>setting-get</code> or <code>setting-get-multiple</code> can be used to get settings for use in custom code. Both mixins will search for the user-defined settings first and, if it cannot find a user-defined setting, falls back to the Pattern Library defined setting. If no setting is found, they will return <code>null</code>.</p>
+<pre><code class="language-scss">.foo {
+  color: setting-get(&#39;primary color&#39;); // #325c80  
+}
+
+@debug setting-get-multiple(&#39;primary color&#39;, &#39;secodnary color&#39;);
+// (&#39;primary color&#39;: #325c80, &#39;secondary color&#39;: #006d5d)
+</code></pre>
+<p>When using settings in custom code (for instance, custom mixins or functions) where user input is also allowed (for instance, buttons or user messaging), it can be useful to test to see if a user has passed in a custom value and, if not, fall back to the value from <code>setting-get</code>. Toolkit provides <a href="https://github.com/at-import/toolkit#setting-pick">setting-pick`</a> functions for just this use case. These should be utilized as needed.</p>
+</div>

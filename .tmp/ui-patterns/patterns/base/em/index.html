@@ -1,0 +1,54 @@
+---
+name: Em
+description: Emphasized text
+displayTemplate: pattern
+applicationMethods:
+  - code: .base--em
+    description: Add this class to an element
+  - code: .base--STYLED em
+    description: '`<em>` tag inside a class of `.base--STYLED`'
+  - code: '%base--em'
+    description: Extend this silent selector through Sass
+variables:
+  text: emphasized text
+---
+<article library-class="pattern">
+  <p library-class="pattern--description">Emphasized text</p>
+  <div library-class="pattern--rendered">
+    <em class="base--em">emphasized text</em>
+</div>
+  <div library-class="pattern--code">
+    <pre><code class="language-markup">&lt;em class=&quot;base--em&quot;&gt;emphasized text&lt;/em&gt;
+</code></pre>
+  </div>
+  <div library-class="pattern--readme" class="base--STYLED">
+    <p>Emphasized text, <code>&lt;em&gt;</code>, is the emphasized phrase tag</p>
+</div>
+  <aside library-class="pattern--application">
+    <header library-class="pattern--header" class="base--h3">
+      <h3>Application Methods</h3>
+    </header>
+    <ul class="base--ul">
+      
+      <li class="base--li"><code class="base--code">.base--em</code> - <span library-class="pattern--inline-description" class="base--STYLED"><p>Add this class to an element</p>
+</span></li>
+      
+      <li class="base--li"><code class="base--code">.base--STYLED em</code> - <span library-class="pattern--inline-description" class="base--STYLED"><p><code>&lt;em&gt;</code> tag inside a class of <code>.base--STYLED</code></p>
+</span></li>
+      
+      <li class="base--li"><code class="base--code">%base--em</code> - <span library-class="pattern--inline-description" class="base--STYLED"><p>Extend this silent selector through Sass</p>
+</span></li>
+      
+    </ul>
+  </aside>
+  <aside library-class="pattern--settings">
+    <header library-class="pattern--header" class="base--h3">
+      <h3>Settings</h3>
+    </header>
+    <ul class="base--ul">
+      
+    </ul>
+</aside>
+</article>
+
+

@@ -71,11 +71,11 @@ variables:
         tone: 30
       - palette: Gray
         tone: 10
-      - palette: Neutral
+      - palette: Neutral-White
         tone: 4
-      - palette: Neutral
+      - palette: Neutral-White
         tone: 2
-      - palette: Neutral
+      - palette: Neutral-White
         tone: 1
 ---
 

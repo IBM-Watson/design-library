@@ -1,0 +1,109 @@
+---
+name: Input - Email
+description: Email input field for a form
+displayTemplate: pattern
+applicationMethods:
+  - code: .base--email-input
+    description: Add this class to an element
+  - code: '.base--STYLED input[type="email"]'
+    description: '`<input type="email">` tag inside a class of `.base--STYLED`'
+  - code: '%base--email-input'
+    description: Extend this silent selector through Sass
+settings:
+  - setting: input padding
+    description: Padding of input box
+  - setting: input border width
+    description: Border width of input box
+  - setting: input border color
+    description: Color of input box border
+  - setting: background color
+    description: Background color of input box
+variables:
+  inputs:
+    basic:
+      label: Basic Email Input
+      type: email
+    placeholder:
+      label: Placeholder Email
+      type: email
+      placeholder: email@example.com
+    disabled:
+      label: Disabled Email Input
+      type: email
+      placeholder: disabled-email@example.com
+      disabled: true
+---
+<article library-class="pattern">
+  <p library-class="pattern--description">Email input field for a form</p>
+  <div library-class="pattern--rendered">
+    
+<!-- {% pattern input from base %} -->
+<label class="base--block-label" for="input1">Basic Email Input</label>
+<input type="email" id="input1"   class="base--email-input" ></input>
+
+<label class="base--block-label" for="input2">Placeholder Email</label>
+<input type="email" id="input2" placeholder="email@example.com"   class="base--email-input" ></input>
+
+<label class="base--block-label" for="input3">Disabled Email Input</label>
+<input type="email" id="input3" placeholder="disabled-email@example.com"   class="base--email-input" disabled></input>
+<!-- {% end pattern input from base %} -->
+
+</div>
+  <div library-class="pattern--code">
+    <pre><code class="language-markup">
+&lt;!-- {% pattern input from base %} --&gt;
+&lt;label class=&quot;base--block-label&quot; for=&quot;input1&quot;&gt;Basic Email Input&lt;/label&gt;
+&lt;input type=&quot;email&quot; id=&quot;input1&quot;   class=&quot;base--email-input&quot; &gt;&lt;/input&gt;
+
+&lt;label class=&quot;base--block-label&quot; for=&quot;input2&quot;&gt;Placeholder Email&lt;/label&gt;
+&lt;input type=&quot;email&quot; id=&quot;input2&quot; placeholder=&quot;email@example.com&quot;   class=&quot;base--email-input&quot; &gt;&lt;/input&gt;
+
+&lt;label class=&quot;base--block-label&quot; for=&quot;input3&quot;&gt;Disabled Email Input&lt;/label&gt;
+&lt;input type=&quot;email&quot; id=&quot;input3&quot; placeholder=&quot;disabled-email@example.com&quot;   class=&quot;base--email-input&quot; disabled&gt;&lt;/input&gt;
+&lt;!-- {% end pattern input from base %} --&gt;
+
+</code></pre>
+  </div>
+  <div library-class="pattern--readme" class="base--STYLED">
+    <p>Basic email input for a form.</p>
+</div>
+  <aside library-class="pattern--application">
+    <header library-class="pattern--header" class="base--h3">
+      <h3>Application Methods</h3>
+    </header>
+    <ul class="base--ul">
+      
+      <li class="base--li"><code class="base--code">.base--email-input</code> - <span library-class="pattern--inline-description" class="base--STYLED"><p>Add this class to an element</p>
+</span></li>
+      
+      <li class="base--li"><code class="base--code">.base--STYLED input[type=&quot;email&quot;]</code> - <span library-class="pattern--inline-description" class="base--STYLED"><p><code>&lt;input type=&quot;email&quot;&gt;</code> tag inside a class of <code>.base--STYLED</code></p>
+</span></li>
+      
+      <li class="base--li"><code class="base--code">%base--email-input</code> - <span library-class="pattern--inline-description" class="base--STYLED"><p>Extend this silent selector through Sass</p>
+</span></li>
+      
+    </ul>
+  </aside>
+  <aside library-class="pattern--settings">
+    <header library-class="pattern--header" class="base--h3">
+      <h3>Settings</h3>
+    </header>
+    <ul class="base--ul">
+      
+      <li class="base--li"><code class="base--code">input padding</code> - <span library-class="pattern--inline-description" class="base--STYLED"><p>Padding of input box</p>
+</span></li>
+      
+      <li class="base--li"><code class="base--code">input border width</code> - <span library-class="pattern--inline-description" class="base--STYLED"><p>Border width of input box</p>
+</span></li>
+      
+      <li class="base--li"><code class="base--code">input border color</code> - <span library-class="pattern--inline-description" class="base--STYLED"><p>Color of input box border</p>
+</span></li>
+      
+      <li class="base--li"><code class="base--code">background color</code> - <span library-class="pattern--inline-description" class="base--STYLED"><p>Background color of input box</p>
+</span></li>
+      
+    </ul>
+</aside>
+</article>
+
+

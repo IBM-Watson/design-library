@@ -1,0 +1,194 @@
+---
+name: Table
+description: Tabular information display
+displayTemplate: pattern
+applicationMethods:
+  - code: .base--thead
+    description: Add this class to an element
+  - code: .base--STYLED thead
+    description: '`<thead>` tag inside a class of `.base--STYLED`'
+  - code: '%base--thead'
+    description: Extend this silent selector through Sass
+  - code: .base--td
+    description: Add this class to an element
+  - code: .base--STYLED td
+    description: '`<td>` tag inside a class of `.base--STYLED`'
+  - code: '%base--td'
+    description: Extend this silent selector through Sass
+  - code: .base--tr
+    description: Add this class to an element
+  - code: .base--STYLED tr
+    description: '`<tr>` tag inside a class of `.base--STYLED`'
+  - code: '%base--tr'
+    description: Extend this silent selector through Sass
+settings:
+  - setting: large typography breakpoint
+    description: Breakpoint to move from smaller to larger typography
+variables:
+  table:
+    head:
+      - First Name
+      - Last Name
+      - Role
+    body:
+      - - Westley
+        - '--'
+        - The Man in Black
+      - - Princess
+        - Buttercup
+        - The Princess Bride
+      - - Prince
+        - Humperdinck
+        - The Obnoxious Prince
+      - - Inigo
+        - Montoya
+        - The Spaniard
+      - - Fezzik
+        - '--'
+        - The Giant
+---
+<article library-class="pattern">
+  <p library-class="pattern--description">Tabular information display</p>
+  <div library-class="pattern--rendered">
+    <table class="base--table">
+  <thead class="base--thead">
+    <tr class="base--tr">
+      <td class="base--td">First Name</td>
+      <td class="base--td">Last Name</td>
+      <td class="base--td">Role</td>
+      
+    </tr>
+  </thead>
+  <tbody class="base--tbody">
+    <tr class="base--tr">
+      <td class="base--td">Westley</td>
+      <td class="base--td">--</td>
+      <td class="base--td">The Man in Black</td>
+      
+    </tr>
+    <tr class="base--tr">
+      <td class="base--td">Princess</td>
+      <td class="base--td">Buttercup</td>
+      <td class="base--td">The Princess Bride</td>
+      
+    </tr>
+    <tr class="base--tr">
+      <td class="base--td">Prince</td>
+      <td class="base--td">Humperdinck</td>
+      <td class="base--td">The Obnoxious Prince</td>
+      
+    </tr>
+    <tr class="base--tr">
+      <td class="base--td">Inigo</td>
+      <td class="base--td">Montoya</td>
+      <td class="base--td">The Spaniard</td>
+      
+    </tr>
+    <tr class="base--tr">
+      <td class="base--td">Fezzik</td>
+      <td class="base--td">--</td>
+      <td class="base--td">The Giant</td>
+      
+    </tr>
+    
+  </tbody>
+</table>
+</div>
+  <div library-class="pattern--code">
+    <pre><code class="language-markup">&lt;table class=&quot;base--table&quot;&gt;
+  &lt;thead class=&quot;base--thead&quot;&gt;
+    &lt;tr class=&quot;base--tr&quot;&gt;
+      &lt;td class=&quot;base--td&quot;&gt;First Name&lt;/td&gt;
+      &lt;td class=&quot;base--td&quot;&gt;Last Name&lt;/td&gt;
+      &lt;td class=&quot;base--td&quot;&gt;Role&lt;/td&gt;
+      
+    &lt;/tr&gt;
+  &lt;/thead&gt;
+  &lt;tbody class=&quot;base--tbody&quot;&gt;
+    &lt;tr class=&quot;base--tr&quot;&gt;
+      &lt;td class=&quot;base--td&quot;&gt;Westley&lt;/td&gt;
+      &lt;td class=&quot;base--td&quot;&gt;--&lt;/td&gt;
+      &lt;td class=&quot;base--td&quot;&gt;The Man in Black&lt;/td&gt;
+      
+    &lt;/tr&gt;
+    &lt;tr class=&quot;base--tr&quot;&gt;
+      &lt;td class=&quot;base--td&quot;&gt;Princess&lt;/td&gt;
+      &lt;td class=&quot;base--td&quot;&gt;Buttercup&lt;/td&gt;
+      &lt;td class=&quot;base--td&quot;&gt;The Princess Bride&lt;/td&gt;
+      
+    &lt;/tr&gt;
+    &lt;tr class=&quot;base--tr&quot;&gt;
+      &lt;td class=&quot;base--td&quot;&gt;Prince&lt;/td&gt;
+      &lt;td class=&quot;base--td&quot;&gt;Humperdinck&lt;/td&gt;
+      &lt;td class=&quot;base--td&quot;&gt;The Obnoxious Prince&lt;/td&gt;
+      
+    &lt;/tr&gt;
+    &lt;tr class=&quot;base--tr&quot;&gt;
+      &lt;td class=&quot;base--td&quot;&gt;Inigo&lt;/td&gt;
+      &lt;td class=&quot;base--td&quot;&gt;Montoya&lt;/td&gt;
+      &lt;td class=&quot;base--td&quot;&gt;The Spaniard&lt;/td&gt;
+      
+    &lt;/tr&gt;
+    &lt;tr class=&quot;base--tr&quot;&gt;
+      &lt;td class=&quot;base--td&quot;&gt;Fezzik&lt;/td&gt;
+      &lt;td class=&quot;base--td&quot;&gt;--&lt;/td&gt;
+      &lt;td class=&quot;base--td&quot;&gt;The Giant&lt;/td&gt;
+      
+    &lt;/tr&gt;
+    
+  &lt;/tbody&gt;
+&lt;/table&gt;
+</code></pre>
+  </div>
+  <div library-class="pattern--readme" class="base--STYLED">
+    <p>Table, <code>&lt;table&gt;</code>, and the related <code>&lt;tr&gt;</code>, <code>&lt;th&gt;</code>, <code>&lt;td&gt;</code>, <code>&lt;thead&gt;</code>, and <code>&lt;tbody&gt;</code> tags, are used to display tabular data</p>
+</div>
+  <aside library-class="pattern--application">
+    <header library-class="pattern--header" class="base--h3">
+      <h3>Application Methods</h3>
+    </header>
+    <ul class="base--ul">
+      
+      <li class="base--li"><code class="base--code">.base--thead</code> - <span library-class="pattern--inline-description" class="base--STYLED"><p>Add this class to an element</p>
+</span></li>
+      
+      <li class="base--li"><code class="base--code">.base--STYLED thead</code> - <span library-class="pattern--inline-description" class="base--STYLED"><p><code>&lt;thead&gt;</code> tag inside a class of <code>.base--STYLED</code></p>
+</span></li>
+      
+      <li class="base--li"><code class="base--code">%base--thead</code> - <span library-class="pattern--inline-description" class="base--STYLED"><p>Extend this silent selector through Sass</p>
+</span></li>
+      
+      <li class="base--li"><code class="base--code">.base--td</code> - <span library-class="pattern--inline-description" class="base--STYLED"><p>Add this class to an element</p>
+</span></li>
+      
+      <li class="base--li"><code class="base--code">.base--STYLED td</code> - <span library-class="pattern--inline-description" class="base--STYLED"><p><code>&lt;td&gt;</code> tag inside a class of <code>.base--STYLED</code></p>
+</span></li>
+      
+      <li class="base--li"><code class="base--code">%base--td</code> - <span library-class="pattern--inline-description" class="base--STYLED"><p>Extend this silent selector through Sass</p>
+</span></li>
+      
+      <li class="base--li"><code class="base--code">.base--tr</code> - <span library-class="pattern--inline-description" class="base--STYLED"><p>Add this class to an element</p>
+</span></li>
+      
+      <li class="base--li"><code class="base--code">.base--STYLED tr</code> - <span library-class="pattern--inline-description" class="base--STYLED"><p><code>&lt;tr&gt;</code> tag inside a class of <code>.base--STYLED</code></p>
+</span></li>
+      
+      <li class="base--li"><code class="base--code">%base--tr</code> - <span library-class="pattern--inline-description" class="base--STYLED"><p>Extend this silent selector through Sass</p>
+</span></li>
+      
+    </ul>
+  </aside>
+  <aside library-class="pattern--settings">
+    <header library-class="pattern--header" class="base--h3">
+      <h3>Settings</h3>
+    </header>
+    <ul class="base--ul">
+      
+      <li class="base--li"><code class="base--code">large typography breakpoint</code> - <span library-class="pattern--inline-description" class="base--STYLED"><p>Breakpoint to move from smaller to larger typography</p>
+</span></li>
+      
+    </ul>
+</aside>
+</article>
+
+

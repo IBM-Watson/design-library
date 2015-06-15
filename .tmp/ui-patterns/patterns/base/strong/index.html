@@ -1,0 +1,54 @@
+---
+name: Strong
+description: Important (strong) text
+displayTemplate: pattern
+applicationMethods:
+  - code: .base--strong
+    description: Add this class to an element
+  - code: .base--STYLED strong
+    description: '`<strong>` tag inside a class of `.base--STYLED`'
+  - code: '%base--strong'
+    description: Extend this silent selector through Sass
+variables:
+  text: This text is very important.
+---
+<article library-class="pattern">
+  <p library-class="pattern--description">Important (strong) text</p>
+  <div library-class="pattern--rendered">
+    <strong class="base--strong">This text is very important.</strong>
+</div>
+  <div library-class="pattern--code">
+    <pre><code class="language-markup">&lt;strong class=&quot;base--strong&quot;&gt;This text is very important.&lt;/strong&gt;
+</code></pre>
+  </div>
+  <div library-class="pattern--readme" class="base--STYLED">
+    <p>Important text, <code>&lt;strong&gt;</code>, defines an important phrase tag</p>
+</div>
+  <aside library-class="pattern--application">
+    <header library-class="pattern--header" class="base--h3">
+      <h3>Application Methods</h3>
+    </header>
+    <ul class="base--ul">
+      
+      <li class="base--li"><code class="base--code">.base--strong</code> - <span library-class="pattern--inline-description" class="base--STYLED"><p>Add this class to an element</p>
+</span></li>
+      
+      <li class="base--li"><code class="base--code">.base--STYLED strong</code> - <span library-class="pattern--inline-description" class="base--STYLED"><p><code>&lt;strong&gt;</code> tag inside a class of <code>.base--STYLED</code></p>
+</span></li>
+      
+      <li class="base--li"><code class="base--code">%base--strong</code> - <span library-class="pattern--inline-description" class="base--STYLED"><p>Extend this silent selector through Sass</p>
+</span></li>
+      
+    </ul>
+  </aside>
+  <aside library-class="pattern--settings">
+    <header library-class="pattern--header" class="base--h3">
+      <h3>Settings</h3>
+    </header>
+    <ul class="base--ul">
+      
+    </ul>
+</aside>
+</article>
+
+

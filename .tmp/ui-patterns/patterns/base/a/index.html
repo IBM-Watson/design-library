@@ -1,0 +1,75 @@
+---
+name: Anchor link
+description: Tag to define a hyperlink
+displayTemplate: pattern
+applicationMethods:
+  - code: .base--a
+    description: Add this class to an element
+  - code: .base--STYLED a
+    description: '`<a>` tag inside a class of `.base--STYLED`'
+  - code: '%base--a'
+    description: Extend this silent selector through Sass
+  - code: '`@include base--a([$color: null, $background: null])'
+    description: 'Include mixin to customize links. `$color` is text color and defaults to `primary color` setting, `$background` is background color link will be on and defaults to `background color` setting.'
+settings:
+  - setting: primary color
+    description: Link color
+  - setting: background color
+    description: Assists with creating illusion of cleared descenders for underline
+  - setting: bold weight font
+    description: Weight of link
+variables:
+  text: Link to something
+---
+<article library-class="pattern">
+  <p library-class="pattern--description">Tag to define a hyperlink</p>
+  <div library-class="pattern--rendered">
+    <a href="#" class="base--a">Link to something</a>
+</div>
+  <div library-class="pattern--code">
+    <pre><code class="language-markup">&lt;a href=&quot;#&quot; class=&quot;base--a&quot;&gt;Link to something&lt;/a&gt;
+</code></pre>
+  </div>
+  <div library-class="pattern--readme" class="base--STYLED">
+    <p>Anchor link, <code>&lt;a&gt;</code>, is the base styling for a link</p>
+</div>
+  <aside library-class="pattern--application">
+    <header library-class="pattern--header" class="base--h3">
+      <h3>Application Methods</h3>
+    </header>
+    <ul class="base--ul">
+      
+      <li class="base--li"><code class="base--code">.base--a</code> - <span library-class="pattern--inline-description" class="base--STYLED"><p>Add this class to an element</p>
+</span></li>
+      
+      <li class="base--li"><code class="base--code">.base--STYLED a</code> - <span library-class="pattern--inline-description" class="base--STYLED"><p><code>&lt;a&gt;</code> tag inside a class of <code>.base--STYLED</code></p>
+</span></li>
+      
+      <li class="base--li"><code class="base--code">%base--a</code> - <span library-class="pattern--inline-description" class="base--STYLED"><p>Extend this silent selector through Sass</p>
+</span></li>
+      
+      <li class="base--li"><code class="base--code">`@include base--a([$color: null, $background: null])</code> - <span library-class="pattern--inline-description" class="base--STYLED"><p>Include mixin to customize links. <code>$color</code> is text color and defaults to <code>primary color</code> setting, <code>$background</code> is background color link will be on and defaults to <code>background color</code> setting.</p>
+</span></li>
+      
+    </ul>
+  </aside>
+  <aside library-class="pattern--settings">
+    <header library-class="pattern--header" class="base--h3">
+      <h3>Settings</h3>
+    </header>
+    <ul class="base--ul">
+      
+      <li class="base--li"><code class="base--code">primary color</code> - <span library-class="pattern--inline-description" class="base--STYLED"><p>Link color</p>
+</span></li>
+      
+      <li class="base--li"><code class="base--code">background color</code> - <span library-class="pattern--inline-description" class="base--STYLED"><p>Assists with creating illusion of cleared descenders for underline</p>
+</span></li>
+      
+      <li class="base--li"><code class="base--code">bold weight font</code> - <span library-class="pattern--inline-description" class="base--STYLED"><p>Weight of link</p>
+</span></li>
+      
+    </ul>
+</aside>
+</article>
+
+
