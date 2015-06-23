@@ -1,0 +1,381 @@
+---
+type: documentation
+title: Animation
+variables:
+  example:
+    firstCompare:
+      exampleOne:
+        title: Single Property Animation Visual Example
+        visualDisplay: /videos/animation-docs/singlePropAni.webm
+    secondCompare:
+      exampleOne:
+        title: Option One Visual Example
+        visualDisplay: /videos/animation-docs/multiPropAni1.webm
+        description: 'Start one property alone, then animate any additional properties.'
+    thirdCompare:
+      exampleOne:
+        title: Option Two Visual Example
+        visualDisplay: /videos/animation-docs/multiPropAni2.webm
+        description: 'Both properties start at the same time, then one property ends before the other.'
+    fourthCompare:
+      exampleOne:
+        title: Singular Animation Visual Example
+        visualDisplay: /videos/animation-docs/multiPropAni1.webm
+    fifthCompare:
+      exampleOne:
+        title: Sequence of Animations Visual Example
+        visualDisplay: /videos/animation-docs/sequenceAni.webm
+resources:
+  links:
+    - name: Debugging Chrome Animations
+      source: 'http://valhead.com/2015/01/06/quick-tip-chrome-animation-controls/'
+---
+<div class="base--STYLED">
+
+<p>The overarching metaphor for our animation comes from the IBM Design Language metaphor <em>elegant machine motion</em>. Elegant machine motion consists of very quick movements with strong easing at the beginning and/or end of the animation, plus subtle offsets.</p>
+<h2 id="properties">Properties</h2>
+<p>Properties are the elements of an object that will change over time. The properties that can animate within CSS are listed below. We recommend using the most performant properties first. If the desired effect cannot be achieved, use the general list of properties as a fallback.</p>
+<p><strong>Most Performant Properties</strong></p>
+<ul>
+<li>Position: <code>transform: translate(npx,npx);</code></li>
+<li>Scale: <code>transform: scale(n);</code></li>
+<li>Rotation: <code>transform: rotate(ndeg);</code></li>
+<li>Opacity: <code>opacity: 0...1;</code></li>
+</ul>
+<p>For more information about why these properties are performant, see <a href="http://www.html5rocks.com/en/tutorials/speed/high-performance-animations/">this blog post.</a></p>
+<p>To see a full list of animatable properties and examples of them animating, visit <a href="http://leaverou.github.io/animatable/">Animatable.</a></p>
+<h3 id="single-property-animations">Single Property Animations</h3>
+<p>When animating only a single property, follow the guidelines below. </p>
+<p>
+<div library-class="_library--clearfix">
+  
+    
+<div library-class="example--SMALL">
+  
+  <p library-class="example--title">
+  
+Single Property Animation Visual Example</p>
+
+  
+  <div library-class="media">
+    
+      <video library-class="media--video" controls loop autoplay>
+        
+          <source src="/videos/animation-docs/singlePropAni.mp4" type="video/mp4">
+          <source src="/videos/animation-docs/singlePropAni.webm" type="video/webm">
+        
+        <div class="base--STYLED">
+          <p><a href="/videos/animation-docs/singlePropAni.mp4">Download video <strong>Single Property Animation Visual Example</strong></a></p>
+        </div>
+      </video>
+    
+  </div>
+
+  
+</div>
+
+  
+</div>
+</p>
+<pre><code class="language-scss">//box class
+.single-attribute {
+  animation: single-attribute 1s map-get($timing-functions, snap-in);
+}
+
+//keyframes for animation
+@keyframes single-attribute {
+  0% {
+    transform: scale(0);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+</code></pre>
+<p><strong>Timing Functions</strong></p>
+<p>Use snap-in eases to add very strong eases to quick movements. This enhances the metaphor of elegant machine motion.</p>
+<ul>
+<li>Use of Timing Functions:<ul>
+<li><strong>Entrances</strong> - <code>map-get($timing-functions, snap-in)</code> (Fast to Slow) </li>
+<li><strong>Exits</strong> - <code>map-get($timing-functions, snap-out)</code> (Slow to Fast)</li>
+<li><strong>Interactive Elements</strong> - <code>map-get($timing-functions, snap-in-out)</code></li>
+</ul>
+</li>
+</ul>
+<h3 id="multiple-property-animations">Multiple Property Animations</h3>
+<p>When more than one property is being animated, the animation is known as a multiple property animation. With multiple property animations, there are two different options: to start one property alone then animate any additional properties, or to start both properties at the same time then have one property end before the other. We recommend not starting and stopping multiple properties at the same time; choose one option or the other.</p>
+<p>
+<div library-class="_library--clearfix">
+  
+    
+<div library-class="example--SMALL">
+  
+  <p library-class="example--title">
+  
+Option One Visual Example</p>
+
+  
+  <div library-class="media">
+    
+      <video library-class="media--video" controls loop autoplay>
+        
+          <source src="/videos/animation-docs/multiPropAni1.mp4" type="video/mp4">
+          <source src="/videos/animation-docs/multiPropAni1.webm" type="video/webm">
+        
+        <div class="base--STYLED">
+          <p><a href="/videos/animation-docs/multiPropAni1.mp4">Download video <strong>Option One Visual Example</strong></a></p>
+        </div>
+      </video>
+    
+  </div>
+
+  
+    <div library-class="example--description"><p>Start one property alone, then animate any additional properties.</p>
+</div>
+  
+</div>
+
+  
+</div>
+</p>
+<pre><code class="language-scss">//box class
+.animation-a {
+  animation: animation-a 1s map-get($timing-functions, snap-in);
+  transform-origin: 0% 100%;
+}
+
+//keyframes for animation
+@keyframes animation-a {
+  0% {
+    transform: scale(0 , 0);
+  }
+  50% {
+    transform: scale(.5 , 0);
+  }
+  100% {
+    transform: scale(1 , 1);
+  }
+}
+</code></pre>
+<p>
+<div library-class="_library--clearfix">
+  
+    
+<div library-class="example--SMALL">
+  
+  <p library-class="example--title">
+  
+Option Two Visual Example</p>
+
+  
+  <div library-class="media">
+    
+      <video library-class="media--video" controls loop autoplay>
+        
+          <source src="/videos/animation-docs/multiPropAni2.mp4" type="video/mp4">
+          <source src="/videos/animation-docs/multiPropAni2.webm" type="video/webm">
+        
+        <div class="base--STYLED">
+          <p><a href="/videos/animation-docs/multiPropAni2.mp4">Download video <strong>Option Two Visual Example</strong></a></p>
+        </div>
+      </video>
+    
+  </div>
+
+  
+    <div library-class="example--description"><p>Both properties start at the same time, then one property ends before the other.</p>
+</div>
+  
+</div>
+
+  
+</div>
+</p>
+<pre><code class="language-scss">//box class
+.animation-b {
+  animation: animation-b 1s map-get($timing-functions, snap-in);
+  transform-origin: 0% 100%;
+}
+
+//keyframes for animation
+@keyframes animation-b {
+  0% {
+    transform: scale(0 , 0);
+  }
+  30% {
+    transform: scale(.2 , 0);
+  }
+  80% {
+    transform: scaleY(.5);
+  }
+  100% {
+    transform: scale(1 , 1);
+  }
+}
+</code></pre>
+<p><strong>Timing Functions</strong></p>
+<p>Use snap-in eases to add very strong eases to quick movements. This enhances the metaphor of elegant machine motion.</p>
+<ul>
+<li>Use of Timing Functions: <ul>
+<li><strong>Entrances</strong> - <code>map-get($timing-functions, snap-in)</code> (Fast to Slow) </li>
+<li><strong>Exits</strong> - <code>map-get($timing-functions, snap-out)</code> (Slow to Fast)</li>
+<li><strong>Interactive Elements</strong> - <code>map-get($timing-functions, snap-in-out)</code></li>
+</ul>
+</li>
+</ul>
+<h2 id="singular-versus-sequence-of-actions">Singular versus Sequence of Actions</h2>
+<p>Within user interfaces, there are instances where only one element moves, as well as instances when multiple elements create a sequence of actions.</p>
+<h3 id="singular-action">Singular Action</h3>
+<p>A singular action animation occurs when only one element on the screen is animated and there are no other complementary elements.</p>
+<p>
+<div library-class="_library--clearfix">
+  
+    
+<div library-class="example--SMALL">
+  
+  <p library-class="example--title">
+  
+Singular Animation Visual Example</p>
+
+  
+  <div library-class="media">
+    
+      <video library-class="media--video" controls loop autoplay>
+        
+          <source src="/videos/animation-docs/multiPropAni1.mp4" type="video/mp4">
+          <source src="/videos/animation-docs/multiPropAni1.webm" type="video/webm">
+        
+        <div class="base--STYLED">
+          <p><a href="/videos/animation-docs/multiPropAni1.mp4">Download video <strong>Singular Animation Visual Example</strong></a></p>
+        </div>
+      </video>
+    
+  </div>
+
+  
+</div>
+
+  
+</div>
+</p>
+<h3 id="sequence-of-actions">Sequence of Actions</h3>
+<p>A sequence of actions animation occurs when there are multiple animated elements. This is typically a primary action followed by a secondary action that complements the primary.</p>
+<p>
+<div library-class="_library--clearfix">
+  
+    
+<div library-class="example--SMALL">
+  
+  <p library-class="example--title">
+  
+Sequence of Animations Visual Example</p>
+
+  
+  <div library-class="media">
+    
+      <video library-class="media--video" controls loop autoplay>
+        
+          <source src="/videos/animation-docs/sequenceAni.mp4" type="video/mp4">
+          <source src="/videos/animation-docs/sequenceAni.webm" type="video/webm">
+        
+        <div class="base--STYLED">
+          <p><a href="/videos/animation-docs/sequenceAni.mp4">Download video <strong>Sequence of Animations Visual Example</strong></a></p>
+        </div>
+      </video>
+    
+  </div>
+
+  
+</div>
+
+  
+</div>
+</p>
+<p>In the example above, the text animations and delay enhance the animation by following the lead of the primary action, which in this case is the scaling of the box.</p>
+<h4 id="things-to-consider-with-sequence-of-actions">Things to Consider with Sequence of Actions</h4>
+<ul>
+<li>Choreography: elements should coordinate within the determined hierarchy.</li>
+<li>Delays: delays need to be consistent and should have the same rate across similar content.</li>
+</ul>
+<h2 id="animation-library-implementation">Animation Library Implementation</h2>
+<p>All of the animations live within an animation map. It looks a bit like this:</p>
+<pre><code class="language-scss">$animations: (
+  &#39;fade-in&#39;: (
+    0%: (
+      opacity: 0
+    ),
+    100%: (
+      opacity: 1
+    )
+  ),
+  &#39;slide-in--left&#39; : (
+    0%: (
+      transform: translateY(-100%)
+    ),
+    100%: (
+      transform: translateY(0)
+    )
+  ),
+  &#39;slide-in--right&#39; : (
+    0%: (
+      transform: translateY(100%)
+    ),
+    100%: (
+      transform: translateY(0)
+    )
+  )
+);
+</code></pre>
+<p>This is the format of the map, and everything between &lt;&gt; is a string:</p>
+<pre><code class="language-scss">$animations: (
+  &#39;&lt;animation name&gt;&#39;: (
+    &lt;keyframe%&gt;: (
+      &lt;property&gt;: &lt;value&gt;;
+    ),
+    &lt;keyframe%&gt;: (
+      &lt;property&gt;: &lt;value&gt;;
+    )
+  )
+);
+</code></pre>
+<p>In order to use any of these animations in a product, we have implemented an animate Sass mixin. To include animation with an element, use the following syntax: <code>@include animation($animation-name [, $duration, $timing-function])</code>. We have included defaults for the <code>$duration</code> (2s) and <code>$timing-function</code> (ease-in), in case you do not specify your own.</p>
+<p>For example, you can implement <code>@include animate(&#39;fade-in&#39;);</code> or <code>@include animate(fade-in, 3s, snap-in);</code>.</p>
+<p>We currently provide these animations:</p>
+<p>Entrance Animations</p>
+<ul>
+<li><code>fade-in</code></li>
+<li><code>fade-in--up</code></li>
+<li><code>fade-in--down</code></li>
+<li><code>fade-in--left</code></li>
+<li><code>fade-in--right</code></li>
+<li><code>slide-in--up</code></li>
+<li><code>slide-in--down</code></li>
+<li><code>slide-in--left</code></li>
+<li><code>slide-in--right</code></li>
+</ul>
+<p>Exit Animations</p>
+<ul>
+<li><code>fade-out</code></li>
+<li><code>fade-out--up</code></li>
+<li><code>fade-out--down</code></li>
+<li><code>fade-out--left</code></li>
+<li><code>fade-out--right</code></li>
+<li><code>slide-out--up</code></li>
+<li><code>slide-out--down</code></li>
+<li><code>slide-out--left</code></li>
+<li><code>slide-out--right</code></li>
+</ul>
+<h3 id="timing-functions">Timing Functions</h3>
+<p>A timing function is a mathematical equation that creates a bezier curve, which is a line that defines the acceleration pattern on a graph. Bezier curves are often translated to keywords like ease-in, ease-out, and ease-in-out. They are also referred to as “Motion Curves” or “Curves.”</p>
+<p>We currently provide these timing functions:</p>
+<ul>
+<li><code>ease-in</code></li>
+<li><code>ease-out</code></li>
+<li><code>bounce-out</code></li>
+<li><code>bounce-in</code></li>
+<li><code>bounce-in-out</code></li>
+<li><code>snap-in</code></li>
+<li><code>snap-out</code></li>
+<li><code>snap-in-out</code></li>
+</ul>
+</div>

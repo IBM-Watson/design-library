@@ -1,0 +1,120 @@
+---
+name: Input - Telephone
+description: Tel input field for a form
+displayTemplate: pattern
+applicationMethods:
+  - code: .base--tel-input
+    description: Add this class to an element
+  - code: '.base--STYLED input[type="tel"]'
+    description: '`<input type="tel">` tag inside a class of `.base--STYLED`'
+  - code: '%base--tel-input'
+    description: Extend this silent selector through Sass
+settings:
+  - setting: input padding
+    description: Padding of input box
+  - setting: input border width
+    description: Border width of input box
+  - setting: input border color
+    description: Color of input box border
+  - setting: background color
+    description: Background color of input box
+variables:
+  inputs:
+    basic:
+      label: Basic Tel Input
+      type: tel
+    placeholder:
+      label: Placeholder with Default Tel Pattern
+      type: tel
+      placeholder: 8882121881
+    pattern:
+      label: Pattern Based on USA Phone Number
+      type: tel
+      pattern: "\\d{3}[\\-]\\d{3}[\\-]\\d{4}"
+      placeholder: 123-343-9938
+    disabled:
+      label: Disabled Tel Input
+      type: tel
+      placeholder: 8882121881
+      disabled: true
+---
+<article library-class="pattern">
+  <p library-class="pattern--description">Tel input field for a form</p>
+  <div library-class="pattern--rendered">
+    
+<!-- {% pattern input from base %} -->
+<label class="base--block-label" for="input1">Basic Tel Input</label>
+<input type="tel" id="input1"   class="base--tel-input" ></input>
+
+<label class="base--block-label" for="input2">Placeholder with Default Tel Pattern</label>
+<input type="tel" id="input2" placeholder="8882121881"   class="base--tel-input" ></input>
+
+<label class="base--block-label" for="input3">Pattern Based on USA Phone Number</label>
+<input type="tel" id="input3" placeholder="123-343-9938"  pattern="\d{3}[\-]\d{3}[\-]\d{4}"  class="base--tel-input" ></input>
+
+<label class="base--block-label" for="input4">Disabled Tel Input</label>
+<input type="tel" id="input4" placeholder="8882121881"   class="base--tel-input" disabled></input>
+<!-- {% end pattern input from base %} -->
+
+</div>
+  <div library-class="pattern--code">
+    <pre><code class="language-markup">
+&lt;!-- {% pattern input from base %} --&gt;
+&lt;label class=&quot;base--block-label&quot; for=&quot;input1&quot;&gt;Basic Tel Input&lt;/label&gt;
+&lt;input type=&quot;tel&quot; id=&quot;input1&quot;   class=&quot;base--tel-input&quot; &gt;&lt;/input&gt;
+
+&lt;label class=&quot;base--block-label&quot; for=&quot;input2&quot;&gt;Placeholder with Default Tel Pattern&lt;/label&gt;
+&lt;input type=&quot;tel&quot; id=&quot;input2&quot; placeholder=&quot;8882121881&quot;   class=&quot;base--tel-input&quot; &gt;&lt;/input&gt;
+
+&lt;label class=&quot;base--block-label&quot; for=&quot;input3&quot;&gt;Pattern Based on USA Phone Number&lt;/label&gt;
+&lt;input type=&quot;tel&quot; id=&quot;input3&quot; placeholder=&quot;123-343-9938&quot;  pattern=&quot;\d{3}[\-]\d{3}[\-]\d{4}&quot;  class=&quot;base--tel-input&quot; &gt;&lt;/input&gt;
+
+&lt;label class=&quot;base--block-label&quot; for=&quot;input4&quot;&gt;Disabled Tel Input&lt;/label&gt;
+&lt;input type=&quot;tel&quot; id=&quot;input4&quot; placeholder=&quot;8882121881&quot;   class=&quot;base--tel-input&quot; disabled&gt;&lt;/input&gt;
+&lt;!-- {% end pattern input from base %} --&gt;
+
+</code></pre>
+  </div>
+  <div library-class="pattern--readme" class="base--STYLED">
+    <p>Basic telephone input type for a form. These can read for specific regex phone patterns, or by default, accept a numeric-only input.</p>
+</div>
+  <aside library-class="pattern--application">
+    <header library-class="pattern--header" class="base--h3">
+      <h3>Application Methods</h3>
+    </header>
+    <ul class="base--ul">
+      
+      <li class="base--li"><code class="base--code">.base--tel-input</code> - <span library-class="pattern--inline-description" class="base--STYLED"><p>Add this class to an element</p>
+</span></li>
+      
+      <li class="base--li"><code class="base--code">.base--STYLED input[type=&quot;tel&quot;]</code> - <span library-class="pattern--inline-description" class="base--STYLED"><p><code>&lt;input type=&quot;tel&quot;&gt;</code> tag inside a class of <code>.base--STYLED</code></p>
+</span></li>
+      
+      <li class="base--li"><code class="base--code">%base--tel-input</code> - <span library-class="pattern--inline-description" class="base--STYLED"><p>Extend this silent selector through Sass</p>
+</span></li>
+      
+    </ul>
+  </aside>
+  <aside library-class="pattern--settings">
+    <header library-class="pattern--header" class="base--h3">
+      <h3>Settings</h3>
+    </header>
+    <ul class="base--ul">
+      
+      <li class="base--li"><code class="base--code">input padding</code> - <span library-class="pattern--inline-description" class="base--STYLED"><p>Padding of input box</p>
+</span></li>
+      
+      <li class="base--li"><code class="base--code">input border width</code> - <span library-class="pattern--inline-description" class="base--STYLED"><p>Border width of input box</p>
+</span></li>
+      
+      <li class="base--li"><code class="base--code">input border color</code> - <span library-class="pattern--inline-description" class="base--STYLED"><p>Color of input box border</p>
+</span></li>
+      
+      <li class="base--li"><code class="base--code">background color</code> - <span library-class="pattern--inline-description" class="base--STYLED"><p>Background color of input box</p>
+</span></li>
+      
+    </ul>
+</aside>
+</article>
+
+

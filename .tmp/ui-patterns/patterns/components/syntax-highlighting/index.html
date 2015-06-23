@@ -1,0 +1,54 @@
+---
+name: Syntax Highlighting
+description: Syntax highlighting for code blocks and inline code
+displayTemplate: pattern
+applicationMethods:
+  - code: Prism
+    description: 'Install [Prism](http://prismjs.com/) from Bower (or other means) and include it and the relevant languages to be highlighted'
+  - code: .language-xxx
+    description: 'Add `language-xxx` class to a `<code>` block, replacing `xxx` with the language name'
+variables: null
+---
+<article library-class="pattern">
+  <p library-class="pattern--description">Syntax highlighting for code blocks and inline code</p>
+  <div library-class="pattern--rendered">
+    <pre><code class="language-scss">.foo {
+  content: 'bar';
+}
+</code></pre>
+</div>
+  <div library-class="pattern--code">
+    <pre><code class="language-markup">&lt;pre&gt;&lt;code class=&quot;language-scss&quot;&gt;.foo {
+  content: &#39;bar&#39;;
+}
+&lt;/code&gt;&lt;/pre&gt;
+</code></pre>
+  </div>
+  <div library-class="pattern--readme" class="base--STYLED">
+    <p>Syntax highlighting uses <a href="http://prismjs.com/">Prism</a>, a lightweight, extensible syntax highlighter, to encourage good author practices. Prism is used to highlight embedded languages (e.g. CSS inside HTML, JavaScript inside HTML), code blocks, and inline code. According to the HTML5 spec, the recommended way to define a code language is a <code>language-xxxx</code> class, which is what Prism uses.</p>
+</div>
+  <aside library-class="pattern--application">
+    <header library-class="pattern--header" class="base--h3">
+      <h3>Application Methods</h3>
+    </header>
+    <ul class="base--ul">
+      
+      <li class="base--li"><code class="base--code">Prism</code> - <span library-class="pattern--inline-description" class="base--STYLED"><p>Install <a href="http://prismjs.com/">Prism</a> from Bower (or other means) and include it and the relevant languages to be highlighted</p>
+</span></li>
+      
+      <li class="base--li"><code class="base--code">.language-xxx</code> - <span library-class="pattern--inline-description" class="base--STYLED"><p>Add <code>language-xxx</code> class to a <code>&lt;code&gt;</code> block, replacing <code>xxx</code> with the language name</p>
+</span></li>
+      
+    </ul>
+  </aside>
+  <aside library-class="pattern--settings">
+    <header library-class="pattern--header" class="base--h3">
+      <h3>Settings</h3>
+    </header>
+    <ul class="base--ul">
+      
+    </ul>
+</aside>
+</article>
+
+

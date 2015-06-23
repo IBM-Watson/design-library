@@ -64,7 +64,7 @@ It is important to include adequate spacing around these elements to avoid visua
 
 ### Color Usage
 
-The wordmark and logo for IBM Watson should only appear in the approved color combinations. Any one of the [three primary colors](color.html) for IBM Watson may be used in combination with black or white for use on light or dark backgrounds, respectively. For dark color palettes, use lighter values of the IBM Watson primary colors.
+The wordmark and logo for IBM Watson should only appear in the approved color combinations. Any one of the [three primary colors](/guidelines/style/color) for IBM Watson may be used in combination with black or white for use on light or dark backgrounds, respectively. For dark color palettes, use lighter values of the IBM Watson primary colors.
 
 {{ _example.compare(example.secondCompare) }}
 

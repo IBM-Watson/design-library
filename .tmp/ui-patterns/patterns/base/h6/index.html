@@ -1,0 +1,63 @@
+---
+name: Heading Level 6
+description: Sixth level heading within an associated section
+displayTemplate: pattern
+applicationMethods:
+  - code: .base--h6
+    description: Add this class to an element
+  - code: .base--STYLED h6
+    description: '`<h6>` tag inside a class of `.base--STYLED`'
+  - code: '%base--h6'
+    description: Extend this silent selector through Sass
+settings:
+  - setting: large typography breakpoint
+    description: Breakpoint to move from smaller to larger typography
+variables:
+  header:
+    text: Header 6
+---
+<article library-class="pattern">
+  <p library-class="pattern--description">Sixth level heading within an associated section</p>
+  <div library-class="pattern--rendered">
+    <h6 class="base--h6">Header 6</h6>
+
+</div>
+  <div library-class="pattern--code">
+    <pre><code class="language-markup">&lt;h6 class=&quot;base--h6&quot;&gt;Header 6&lt;/h6&gt;
+
+</code></pre>
+  </div>
+  <div library-class="pattern--readme" class="base--STYLED">
+    <p>Heading Level 6, <code>&lt;h6&gt;</code>, is a sixth level heading within an associated section</p>
+</div>
+  <aside library-class="pattern--application">
+    <header library-class="pattern--header" class="base--h3">
+      <h3>Application Methods</h3>
+    </header>
+    <ul class="base--ul">
+      
+      <li class="base--li"><code class="base--code">.base--h6</code> - <span library-class="pattern--inline-description" class="base--STYLED"><p>Add this class to an element</p>
+</span></li>
+      
+      <li class="base--li"><code class="base--code">.base--STYLED h6</code> - <span library-class="pattern--inline-description" class="base--STYLED"><p><code>&lt;h6&gt;</code> tag inside a class of <code>.base--STYLED</code></p>
+</span></li>
+      
+      <li class="base--li"><code class="base--code">%base--h6</code> - <span library-class="pattern--inline-description" class="base--STYLED"><p>Extend this silent selector through Sass</p>
+</span></li>
+      
+    </ul>
+  </aside>
+  <aside library-class="pattern--settings">
+    <header library-class="pattern--header" class="base--h3">
+      <h3>Settings</h3>
+    </header>
+    <ul class="base--ul">
+      
+      <li class="base--li"><code class="base--code">large typography breakpoint</code> - <span library-class="pattern--inline-description" class="base--STYLED"><p>Breakpoint to move from smaller to larger typography</p>
+</span></li>
+      
+    </ul>
+</aside>
+</article>
+
+

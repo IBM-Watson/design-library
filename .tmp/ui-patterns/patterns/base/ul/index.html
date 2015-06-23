@@ -1,0 +1,68 @@
+---
+name: Unordered List
+description: Unordered list of items
+displayTemplate: pattern
+applicationMethods:
+  - code: .base--ul
+    description: Add this class to an element
+  - code: .base--STYLED ul
+    description: '`<ul>` tag inside a class of `.base--STYLED`'
+  - code: '%base--ul'
+    description: Extend this silent selector through Sass
+variables:
+  listitems:
+    - List item 1
+    - List item 2
+    - Really super duper long list item that is included so that we can see what lists look like when they wrap
+    - List item 3
+---
+<article library-class="pattern">
+  <p library-class="pattern--description">Unordered list of items</p>
+  <div library-class="pattern--rendered">
+    <ul class="base--ul">
+  <li class="base--li">List item 1</li>
+  <li class="base--li">List item 2</li>
+  <li class="base--li">Really super duper long list item that is included so that we can see what lists look like when they wrap</li>
+  <li class="base--li">List item 3</li>
+</ul>
+</div>
+  <div library-class="pattern--code">
+    <pre><code class="language-markup">&lt;ul class=&quot;base--ul&quot;&gt;
+  &lt;li class=&quot;base--li&quot;&gt;List item 1&lt;/li&gt;
+  &lt;li class=&quot;base--li&quot;&gt;List item 2&lt;/li&gt;
+  &lt;li class=&quot;base--li&quot;&gt;Really super duper long list item that is included so that we can see what lists look like when they wrap&lt;/li&gt;
+  &lt;li class=&quot;base--li&quot;&gt;List item 3&lt;/li&gt;
+&lt;/ul&gt;
+</code></pre>
+  </div>
+  <div library-class="pattern--readme" class="base--STYLED">
+    <p>Unordered List, <code>&lt;ul&gt;</code>, is the base styling for a listing of items whose order is not relevant to their display</p>
+</div>
+  <aside library-class="pattern--application">
+    <header library-class="pattern--header" class="base--h3">
+      <h3>Application Methods</h3>
+    </header>
+    <ul class="base--ul">
+      
+      <li class="base--li"><code class="base--code">.base--ul</code> - <span library-class="pattern--inline-description" class="base--STYLED"><p>Add this class to an element</p>
+</span></li>
+      
+      <li class="base--li"><code class="base--code">.base--STYLED ul</code> - <span library-class="pattern--inline-description" class="base--STYLED"><p><code>&lt;ul&gt;</code> tag inside a class of <code>.base--STYLED</code></p>
+</span></li>
+      
+      <li class="base--li"><code class="base--code">%base--ul</code> - <span library-class="pattern--inline-description" class="base--STYLED"><p>Extend this silent selector through Sass</p>
+</span></li>
+      
+    </ul>
+  </aside>
+  <aside library-class="pattern--settings">
+    <header library-class="pattern--header" class="base--h3">
+      <h3>Settings</h3>
+    </header>
+    <ul class="base--ul">
+      
+    </ul>
+</aside>
+</article>
+
+

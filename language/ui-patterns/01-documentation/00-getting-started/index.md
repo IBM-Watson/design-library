@@ -43,7 +43,7 @@ Each pattern in the Pattern Library comes with HTML written in [Swig](http://pau
 
 Styling for projects is done through [Sass](http://sass-lang.com). No CSS files are included intentionally. The styling that is available is basic and will not fit all projects; teams should include designers and developers to flesh out the styling of a project. What *is* provided are a set of patterns that encapsulate the design guidelines presented within the Watson Design Guide that are customizable to a project's needs within those guidelines.
 
-All styling is written following our [Sass and CSS Development Guidelines](/guidelines/development/sass).
+All styling is written following our Sass and CSS Development Guidelines *(coming soon)*.
 
 The Pattern Library is best used when it is customized for the needs of a given project. [Settings](/ui-patterns/documentation/settings) for customization are provided by [Toolkit](https://github.com/at-import/toolkit), so a project's main Sass file should be set up as follows:
 
@@ -65,4 +65,4 @@ Each pattern also includes an *Application Methods* section that will include th
 
 Some patterns will include JavaScript. When they do, the *Application Methods* section of a pattern will explain what files are needed (internally or as a 3rd party dependency) or if files can be ignored in favor of adding something else (for instance, including a [Modernizr](http://modernizr.com/) detect to a custom Modernizr build).
 
-All JavaScript is written following our [JavaScript Development Guidelines](/guidelines/development/javascript).
+All JavaScript is written following our JavaScript Development Guidelines *(coming soon)*.

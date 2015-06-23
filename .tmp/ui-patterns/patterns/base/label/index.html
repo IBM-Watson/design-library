@@ -1,0 +1,66 @@
+---
+name: Label
+description: Caption for an item in a user interface
+displayTemplate: pattern
+applicationMethods:
+  - code: .base--inline-label
+    description: Add this class to an element that is to be inline
+  - code: .base--STYLED label
+    description: '`<label>` tag inside a class of `.base--STYLED`'
+  - code: '%base--inline-label'
+    description: Extend this silent selector through Sass that is to be inline
+  - code: .base--block-label
+    description: Add this class to an element that is to be block
+  - code: '%base--block-label'
+    description: Extend this silent selector through Sass that is to be block
+---
+<article library-class="pattern">
+  <p library-class="pattern--description">Caption for an item in a user interface</p>
+  <div library-class="pattern--rendered">
+    <label class='base--inline-label' for="inline-control">Inline Label</label>
+
+<label class='base--block-label' for="block-control">Block Label</label>
+</div>
+  <div library-class="pattern--code">
+    <pre><code class="language-markup">&lt;label class=&#39;base--inline-label&#39; for=&quot;inline-control&quot;&gt;Inline Label&lt;/label&gt;
+
+&lt;label class=&#39;base--block-label&#39; for=&quot;block-control&quot;&gt;Block Label&lt;/label&gt;
+</code></pre>
+  </div>
+  <div library-class="pattern--readme" class="base--STYLED">
+    <p>Label, <code>&lt;label&gt;</code>, is the information which describes a form input. A label is linked to an input with the <code>for=&lt;id&gt;</code> keyword, where <code>&lt;id&gt;</code> matches the id of the corresponding form element. Note that the <code>&lt;label&gt;</code> will be styled inline unless denoted as a block-level label.</p>
+</div>
+  <aside library-class="pattern--application">
+    <header library-class="pattern--header" class="base--h3">
+      <h3>Application Methods</h3>
+    </header>
+    <ul class="base--ul">
+      
+      <li class="base--li"><code class="base--code">.base--inline-label</code> - <span library-class="pattern--inline-description" class="base--STYLED"><p>Add this class to an element that is to be inline</p>
+</span></li>
+      
+      <li class="base--li"><code class="base--code">.base--STYLED label</code> - <span library-class="pattern--inline-description" class="base--STYLED"><p><code>&lt;label&gt;</code> tag inside a class of <code>.base--STYLED</code></p>
+</span></li>
+      
+      <li class="base--li"><code class="base--code">%base--inline-label</code> - <span library-class="pattern--inline-description" class="base--STYLED"><p>Extend this silent selector through Sass that is to be inline</p>
+</span></li>
+      
+      <li class="base--li"><code class="base--code">.base--block-label</code> - <span library-class="pattern--inline-description" class="base--STYLED"><p>Add this class to an element that is to be block</p>
+</span></li>
+      
+      <li class="base--li"><code class="base--code">%base--block-label</code> - <span library-class="pattern--inline-description" class="base--STYLED"><p>Extend this silent selector through Sass that is to be block</p>
+</span></li>
+      
+    </ul>
+  </aside>
+  <aside library-class="pattern--settings">
+    <header library-class="pattern--header" class="base--h3">
+      <h3>Settings</h3>
+    </header>
+    <ul class="base--ul">
+      
+    </ul>
+</aside>
+</article>
+
+

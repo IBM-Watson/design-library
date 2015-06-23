@@ -1,0 +1,6 @@
+@import "colors.yaml";
+
+.foo {
+  background: map-get($colors, 'white');
+  color: map-get(map-get($colors, 'red'), '70');
+}

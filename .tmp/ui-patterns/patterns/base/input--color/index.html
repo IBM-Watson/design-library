@@ -1,0 +1,88 @@
+---
+name: Input - Color
+description: Color input field for a form
+displayTemplate: pattern
+applicationMethods:
+  - code: .base--input-color
+    description: Add this class to an element
+  - code: '.base--STYLED input[type="color"]'
+    description: '`<input type="color">` tag inside a class of `.base--STYLED`'
+  - code: '%base--input-color'
+    description: Extend this silent selector through Sass
+settings:
+  - setting: input padding
+    description: Padding of input box
+  - setting: input border width
+    description: Border width of input box
+  - setting: input border color
+    description: Color of input box border
+  - setting: white
+    description: Background color of input box
+variables:
+  inputs:
+    basic:
+      label: Basic Color Input
+      type: color
+---
+<article library-class="pattern">
+  <p library-class="pattern--description">Color input field for a form</p>
+  <div library-class="pattern--rendered">
+    
+<!-- {% pattern input from base %} -->
+<label class="base--block-label" for="input1">Basic Color Input</label>
+<input type="color" id="input1"   class="base--color-input" ></input>
+<!-- {% end pattern input from base %} -->
+
+</div>
+  <div library-class="pattern--code">
+    <pre><code class="language-markup">
+&lt;!-- {% pattern input from base %} --&gt;
+&lt;label class=&quot;base--block-label&quot; for=&quot;input1&quot;&gt;Basic Color Input&lt;/label&gt;
+&lt;input type=&quot;color&quot; id=&quot;input1&quot;   class=&quot;base--color-input&quot; &gt;&lt;/input&gt;
+&lt;!-- {% end pattern input from base %} --&gt;
+
+</code></pre>
+  </div>
+  <div library-class="pattern--readme" class="base--STYLED">
+    <p>Basic color input for a form.</p>
+</div>
+  <aside library-class="pattern--application">
+    <header library-class="pattern--header" class="base--h3">
+      <h3>Application Methods</h3>
+    </header>
+    <ul class="base--ul">
+      
+      <li class="base--li"><code class="base--code">.base--input-color</code> - <span library-class="pattern--inline-description" class="base--STYLED"><p>Add this class to an element</p>
+</span></li>
+      
+      <li class="base--li"><code class="base--code">.base--STYLED input[type=&quot;color&quot;]</code> - <span library-class="pattern--inline-description" class="base--STYLED"><p><code>&lt;input type=&quot;color&quot;&gt;</code> tag inside a class of <code>.base--STYLED</code></p>
+</span></li>
+      
+      <li class="base--li"><code class="base--code">%base--input-color</code> - <span library-class="pattern--inline-description" class="base--STYLED"><p>Extend this silent selector through Sass</p>
+</span></li>
+      
+    </ul>
+  </aside>
+  <aside library-class="pattern--settings">
+    <header library-class="pattern--header" class="base--h3">
+      <h3>Settings</h3>
+    </header>
+    <ul class="base--ul">
+      
+      <li class="base--li"><code class="base--code">input padding</code> - <span library-class="pattern--inline-description" class="base--STYLED"><p>Padding of input box</p>
+</span></li>
+      
+      <li class="base--li"><code class="base--code">input border width</code> - <span library-class="pattern--inline-description" class="base--STYLED"><p>Border width of input box</p>
+</span></li>
+      
+      <li class="base--li"><code class="base--code">input border color</code> - <span library-class="pattern--inline-description" class="base--STYLED"><p>Color of input box border</p>
+</span></li>
+      
+      <li class="base--li"><code class="base--code">white</code> - <span library-class="pattern--inline-description" class="base--STYLED"><p>Background color of input box</p>
+</span></li>
+      
+    </ul>
+</aside>
+</article>
+
+

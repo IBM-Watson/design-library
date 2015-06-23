@@ -1,0 +1,8 @@
+@import 'toolkit/kickstart';
+@import 'breakpoint';
+
+.breakpoint {
+  @include breakpoint(500px) {
+    content: 'A Breakpoint!';
+  }
+}

@@ -1,0 +1,161 @@
+---
+type: guideline
+title: Typography
+variables:
+  aside:
+    usageRights:
+      description: "We are currently in the process of inquiring about full usage rights and licensing for Helvetica Neue for IBM. During this time, we're unable to provide downloadable font assets. Please defer to the Cross-Platform Fontstack Options below for comparable fontstacks."
+  example:
+    typefaceCombinations:
+      typefaceCombinationOne:
+        title: Helvetica Neue Roman
+        visualDisplay: /images/typography/typeface-roman.svg
+      typefaceCombinationTwo:
+        title: Helvetica Neue Roman Italic
+        visualDisplay: /images/typography/typeface-roman-italic.svg
+      typefaceCombinationThree:
+        title: Helvetica Neue Bold
+        visualDisplay: /images/typography/typeface-bold.svg
+      typefaceCombinationFour:
+        title: Helvetica Neue Bold Italic
+        visualDisplay: /images/typography/typeface-bold-italic.svg
+    responsiveTypography:
+      title: Major Third with a breakpoint at 500px
+      visualDisplay: /videos/typography/responsive-typography.webm
+      description: 'When the browser gets wider than 500px, headings adopt the Golden Ratio type scale to increase legibility for the user at larger screen sizes.'
+---
+<div class="base--STYLED">
+
+<p>Typography is the atomic element of good interface design. It colors the words in our language and shapes their meaning. It helps to set the visual tone for the entire IBM Watson experience. Text is largely differentiated by size and weight. Keep other properties the same or similar, differentiating only when necessary for the sake of clarity.</p>
+<h2 id="helvetica-neue-for-ibm">Helvetica Neue for IBM</h2>
+<p>As a rule and wherever possible, use Helvetica Neue. It is the font of science and the information age, with a precision and objectivity that commands respect. We lean on Helvetica Neue to do the hard work of conveying information, specifications, and the basics. Its clean confidence makes it ideal for our product design.</p>
+<p>
+  <aside library-class="aside">
+    <p>We are currently in the process of inquiring about full usage rights and licensing for Helvetica Neue for IBM. During this time, we’re unable to provide downloadable font assets. Please defer to the Cross-Platform Fontstack Options below for comparable fontstacks.</p>
+</aside>
+</p>
+<h2 id="performance-considerations">Performance Considerations</h2>
+<p>When presenting large amounts of content, it is important to consider how multiple font downloads can affect the <a href="/guidelines/user-experience/performance/">browser’s performance</a> for the user. To ensure optimized performance for all users, IBM Watson recommends choosing a combination of no more than four different weights and styles (light and light oblique being two different styles, for instance). </p>
+<p>
+<div library-class="_library--clearfix">
+  
+    
+<div library-class="example--SMALL">
+  
+  <p library-class="example--title">
+  
+Helvetica Neue Roman</p>
+
+  
+  <div library-class="media">
+    
+      <img library-class="media--image" src="/images/typography/typeface-roman.svg" alt="Helvetica Neue Roman">
+    
+  </div>
+
+  
+</div>
+
+  
+    
+<div library-class="example--SMALL">
+  
+  <p library-class="example--title">
+  
+Helvetica Neue Roman Italic</p>
+
+  
+  <div library-class="media">
+    
+      <img library-class="media--image" src="/images/typography/typeface-roman-italic.svg" alt="Helvetica Neue Roman Italic">
+    
+  </div>
+
+  
+</div>
+
+  
+    
+<div library-class="example--SMALL">
+  
+  <p library-class="example--title">
+  
+Helvetica Neue Bold</p>
+
+  
+  <div library-class="media">
+    
+      <img library-class="media--image" src="/images/typography/typeface-bold.svg" alt="Helvetica Neue Bold">
+    
+  </div>
+
+  
+</div>
+
+  
+    
+<div library-class="example--SMALL">
+  
+  <p library-class="example--title">
+  
+Helvetica Neue Bold Italic</p>
+
+  
+  <div library-class="media">
+    
+      <img library-class="media--image" src="/images/typography/typeface-bold-italic.svg" alt="Helvetica Neue Bold Italic">
+    
+  </div>
+
+  
+</div>
+
+  
+</div>
+</p>
+<h2 id="typographic-scale">Typographic Scale</h2>
+<p>The IBM Design Language recommends using <a href="http://www.ibm.com/design/language/framework/visual/typography.shtml">modular type scales</a> to create harmonious proportions and structure. Scale creates consistent sizing across elements. A visual type scale turns a typographic balancing act into a set ratio. </p>
+<h3 id="major-third-type-scale">Major Third Type Scale</h3>
+<p>IBM Watson recommends the Major Third ratio for screen sizes under 500px and the establishment of breakpoints for higher contrast on larger screens. This ratio is ideal for creating visual hierarchy on small screens without being too jarring.</p>
+<p>
+<div library-class="example--LARGE">
+  
+  <div library-class="media">
+    
+      <video library-class="media--video" controls loop autoplay>
+        
+          <source src="/videos/typography/responsive-typography.mp4" type="video/mp4">
+          <source src="/videos/typography/responsive-typography.webm" type="video/webm">
+        
+        <div class="base--STYLED">
+          <p><a href="/videos/typography/responsive-typography.mp4">Download video <strong>Major Third with a breakpoint at 500px</strong></a></p>
+        </div>
+      </video>
+    
+  </div>
+
+  <div library-class="example--body">
+    
+  <p library-class="example--title">
+  
+Major Third with a breakpoint at 500px</p>
+
+    
+      <div library-class="example--description"><p>When the browser gets wider than 500px, headings adopt the Golden Ratio type scale to increase legibility for the user at larger screen sizes.</p>
+</div>
+    
+  </div>
+</div>
+</p>
+<h2 id="cross-platform-fontstack-options">Cross-Platform Fontstack Options</h2>
+<h3 id="desktop-or-browser">Desktop or Browser</h3>
+<p><code>font-family: &#39;Helvetica Neue for IBM&#39;, Helvetica, Arial, Roboto, sans-serif;</code>  </p>
+<h6 id="monospace">Monospace</h6>
+<p><code>font-family: &#39;Source Code Pro&#39;, Lucida Console, Andale Mono, monospace;</code></p>
+<h3 id="apple-watch">Apple Watch</h3>
+<p><code>font-family: &#39;San Francisco&#39;;</code></p>
+<h3 id="ios">iOS</h3>
+<p><code>font-family: &#39;Helvetica Neue&#39;;</code> </p>
+<h3 id="android">Android</h3>
+<p><code>font-family: &#39;Roboto&#39;;</code></p>
+</div>
