@@ -1,0 +1,126 @@
+---
+name: Radio Group
+description: A group of radio buttons
+displayTemplate: pattern
+applicationMethods:
+  - code: .radiogroup
+    description: Add this class to the element surrounding the group of radio buttons
+  - code: .radiogroup--item
+    description: Add this class to each individual item housing a radio button
+  - code: '%radiogroup'
+    description: Extend this silent selector through Sass
+  - code: '%radiogroup--item'
+    description: Extend this silent selector through Sass
+variables:
+  radios:
+    - First Option
+    - Second Option
+    - Third Option
+---
+<article library-class="pattern">
+  <p library-class="pattern--description">A group of radio buttons</p>
+  <div library-class="pattern--rendered">
+    <ul role="radiogroup" class="radiogroup">
+  
+  
+  <li class="radiogroup--item">
+    
+<!-- {% pattern radio from base %} -->
+<input role="radio" class="base--radio" type="radio" id="radio-1" name="rb" value="">
+<label class="base--inline-label" for="radio-1">First Option</label>
+<!-- {% end pattern radio from base %} -->
+
+  </li>
+  
+  
+  <li class="radiogroup--item">
+    
+<!-- {% pattern radio from base %} -->
+<input role="radio" class="base--radio" type="radio" id="radio-2" name="rb" value="">
+<label class="base--inline-label" for="radio-2">Second Option</label>
+<!-- {% end pattern radio from base %} -->
+
+  </li>
+  
+  
+  <li class="radiogroup--item">
+    
+<!-- {% pattern radio from base %} -->
+<input role="radio" class="base--radio" type="radio" id="radio-3" name="rb" value="">
+<label class="base--inline-label" for="radio-3">Third Option</label>
+<!-- {% end pattern radio from base %} -->
+
+  </li>
+  
+</ul>
+</div>
+  <div library-class="pattern--code">
+    <pre><code class="language-markup">&lt;ul role=&quot;radiogroup&quot; class=&quot;radiogroup&quot;&gt;
+  
+  
+  &lt;li class=&quot;radiogroup--item&quot;&gt;
+    
+&lt;!-- {% pattern radio from base %} --&gt;
+&lt;input role=&quot;radio&quot; class=&quot;base--radio&quot; type=&quot;radio&quot; id=&quot;radio-1&quot; name=&quot;rb&quot; value=&quot;&quot;&gt;
+&lt;label class=&quot;base--inline-label&quot; for=&quot;radio-1&quot;&gt;First Option&lt;/label&gt;
+&lt;!-- {% end pattern radio from base %} --&gt;
+
+  &lt;/li&gt;
+  
+  
+  &lt;li class=&quot;radiogroup--item&quot;&gt;
+    
+&lt;!-- {% pattern radio from base %} --&gt;
+&lt;input role=&quot;radio&quot; class=&quot;base--radio&quot; type=&quot;radio&quot; id=&quot;radio-2&quot; name=&quot;rb&quot; value=&quot;&quot;&gt;
+&lt;label class=&quot;base--inline-label&quot; for=&quot;radio-2&quot;&gt;Second Option&lt;/label&gt;
+&lt;!-- {% end pattern radio from base %} --&gt;
+
+  &lt;/li&gt;
+  
+  
+  &lt;li class=&quot;radiogroup--item&quot;&gt;
+    
+&lt;!-- {% pattern radio from base %} --&gt;
+&lt;input role=&quot;radio&quot; class=&quot;base--radio&quot; type=&quot;radio&quot; id=&quot;radio-3&quot; name=&quot;rb&quot; value=&quot;&quot;&gt;
+&lt;label class=&quot;base--inline-label&quot; for=&quot;radio-3&quot;&gt;Third Option&lt;/label&gt;
+&lt;!-- {% end pattern radio from base %} --&gt;
+
+  &lt;/li&gt;
+  
+&lt;/ul&gt;
+</code></pre>
+  </div>
+  <div library-class="pattern--readme" class="base--STYLED">
+    <p>A radio group, <code>role=&quot;radiogroup&quot;</code>, contains a list of <a href="/ui-patterns/patterns/base/radio">radio button elements</a>, <code>input[type=&quot;radio&quot;]</code>, of which only one can be selected as the selected answer.</p>
+</div>
+  <aside library-class="pattern--application">
+    <header library-class="pattern--header" class="base--h3">
+      <h3>Application Methods</h3>
+    </header>
+    <ul class="base--ul">
+      
+      <li class="base--li"><code class="base--code">.radiogroup</code> - <span library-class="pattern--inline-description" class="base--STYLED"><p>Add this class to the element surrounding the group of radio buttons</p>
+</span></li>
+      
+      <li class="base--li"><code class="base--code">.radiogroup--item</code> - <span library-class="pattern--inline-description" class="base--STYLED"><p>Add this class to each individual item housing a radio button</p>
+</span></li>
+      
+      <li class="base--li"><code class="base--code">%radiogroup</code> - <span library-class="pattern--inline-description" class="base--STYLED"><p>Extend this silent selector through Sass</p>
+</span></li>
+      
+      <li class="base--li"><code class="base--code">%radiogroup--item</code> - <span library-class="pattern--inline-description" class="base--STYLED"><p>Extend this silent selector through Sass</p>
+</span></li>
+      
+    </ul>
+  </aside>
+  <aside library-class="pattern--settings">
+    <header library-class="pattern--header" class="base--h3">
+      <h3>Settings</h3>
+    </header>
+    <ul class="base--ul">
+      
+    </ul>
+</aside>
+</article>
+
+

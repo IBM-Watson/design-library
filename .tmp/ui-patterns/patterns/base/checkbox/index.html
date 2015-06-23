@@ -1,0 +1,64 @@
+---
+name: Check Box
+description: 'A form field option where multiple choices may be selected, including, but not requiring this particular element'
+displayTemplate: pattern
+applicationMethods:
+  - code: .base--checkbox
+    description: Add this class to an element
+  - code: '.base--STYLED input[type="checkbox"]'
+    description: '`<input type="checkbox">` tag inside a class of `.base--STYLED`'
+  - code: '%base--checkbox'
+    description: Extend this silent selector through Sass
+settings:
+  - setting: input border width
+    description: Border width of checkbox
+variables:
+  checkbox:
+    id: cb1
+    label: Option 1
+---
+<article library-class="pattern">
+  <p library-class="pattern--description">A form field option where multiple choices may be selected, including, but not requiring this particular element</p>
+  <div library-class="pattern--rendered">
+    <input role="checkbox" class="base--checkbox" type="checkbox" id="cb1" name="cb" value="">
+<label class="base--inline-label" for="cb1">Option 1</label>
+</div>
+  <div library-class="pattern--code">
+    <pre><code class="language-markup">&lt;input role=&quot;checkbox&quot; class=&quot;base--checkbox&quot; type=&quot;checkbox&quot; id=&quot;cb1&quot; name=&quot;cb&quot; value=&quot;&quot;&gt;
+&lt;label class=&quot;base--inline-label&quot; for=&quot;cb1&quot;&gt;Option 1&lt;/label&gt;
+</code></pre>
+  </div>
+  <div library-class="pattern--readme" class="base--STYLED">
+    <p>A single check box, <code>&lt;input type=[&quot;checkbox&quot;]&gt;</code>, is an individual form option where multiple choices may be selected, including, but not requiring this particular element.</p>
+</div>
+  <aside library-class="pattern--application">
+    <header library-class="pattern--header" class="base--h3">
+      <h3>Application Methods</h3>
+    </header>
+    <ul class="base--ul">
+      
+      <li class="base--li"><code class="base--code">.base--checkbox</code> - <span library-class="pattern--inline-description" class="base--STYLED"><p>Add this class to an element</p>
+</span></li>
+      
+      <li class="base--li"><code class="base--code">.base--STYLED input[type=&quot;checkbox&quot;]</code> - <span library-class="pattern--inline-description" class="base--STYLED"><p><code>&lt;input type=&quot;checkbox&quot;&gt;</code> tag inside a class of <code>.base--STYLED</code></p>
+</span></li>
+      
+      <li class="base--li"><code class="base--code">%base--checkbox</code> - <span library-class="pattern--inline-description" class="base--STYLED"><p>Extend this silent selector through Sass</p>
+</span></li>
+      
+    </ul>
+  </aside>
+  <aside library-class="pattern--settings">
+    <header library-class="pattern--header" class="base--h3">
+      <h3>Settings</h3>
+    </header>
+    <ul class="base--ul">
+      
+      <li class="base--li"><code class="base--code">input border width</code> - <span library-class="pattern--inline-description" class="base--STYLED"><p>Border width of checkbox</p>
+</span></li>
+      
+    </ul>
+</aside>
+</article>
+
+

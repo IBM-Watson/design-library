@@ -1,0 +1,33 @@
+name: Input - Input
+description: Image input field for a form
+displayTemplate: pattern
+applicationMethods:
+  - code: '.base--file-image'
+    description: 'Add this class to an element'
+  - code: '.base--STYLED input[type="image"]'
+    description: '`<input type="image">` tag inside a class of `.base--STYLED`'
+  - code: '%base--file-image'
+    description: 'Extend this silent selector through Sass'
+settings:
+  - setting: input padding
+    description: Padding of input box
+  - setting: input border width
+    description: Border width of input box
+  - setting: input border color
+    description: Color of input box border
+  - setting: background color
+    description: Background color of input box
+variables:
+  inputs:
+    basic:
+      label: Basic Image Input
+      type: image
+    placeholder:
+      label: Placeholder Image
+      type: image
+      placeholder: This is placeholder file
+    disabled:
+      label: Disabled File Input
+      type: image
+      placeholder: Can't click me
+      disabled: true

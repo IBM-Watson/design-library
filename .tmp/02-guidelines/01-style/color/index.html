@@ -1,0 +1,399 @@
+---
+type: guideline
+title: Color
+resources:
+  files:
+    - name: IBM Color Palette ASE
+      source: /assets/color/ibm-color-palette.ase
+  links:
+    - name: IBM Color Guidelines
+      source: 'http://www.ibm.com/design/language/framework/visual/color.shtml'
+variables:
+  example:
+    paletteApplication:
+      light:
+        title: 'Example: Light Palette'
+        visualDisplay: /images/color/light-palette.svg
+        description: >
+          Primary: Blue 60, Secondary: Orange 50, Accent: Teal 40
+
+
+
+          Consider users who are sensitive to brightness and high contrast colors
+          by using a neutral value as a background color instead of pure white.
+      dark:
+        title: 'Example: Dark Palette'
+        visualDisplay: /images/color/dark-palette.svg
+        description: >
+          Primary: Blue 30, Secondary: Orange 30, Accent: Teal 30
+
+
+
+          Consider users who are sensitive to brightness and high contrast colors
+          by using a gray value as a background color instead of pure black.
+  primaryColors:
+    instructions: Choose a primary and secondary color.
+    colors:
+      - palette: Blue
+        tone: 60
+        adjectives:
+          - Trustworthy
+          - Systematic
+      - palette: Orange
+        tone: 50
+        adjectives:
+          - Innovative
+          - Utilitarian
+      - palette: Teal
+        tone: 60
+        adjectives:
+          - Aware
+          - Approachable
+  accentColors:
+    instructions: Choose an accent color. Add hues as necessary.
+    colors:
+      - palette: Blue
+        tone: 40
+      - palette: Orange
+        tone: 30
+      - palette: Teal
+        tone: 40
+      - palette: Yellow
+        tone: 30
+  supportingGrays:
+    instructions: Choose supporting grays and neutrals.
+    colors:
+      - palette: Gray
+        tone: 90
+      - palette: Gray
+        tone: 80
+      - palette: Gray
+        tone: 60
+      - palette: Gray
+        tone: 50
+      - palette: Gray
+        tone: 30
+      - palette: Gray
+        tone: 10
+      - palette: Neutral-White
+        tone: 40
+      - palette: Neutral-White
+        tone: 20
+      - palette: Neutral-White
+        tone: 10
+---
+<div class="base--STYLED">
+
+<p>Color is a crucial component of visual vernacular, helping to unify the look and feel of all communications. The <a href="http://www.ibm.com/design/language/framework/visual/color.shtml">IBM Design Language</a> comprises a wide spectrum of colors; IBM Watson relies on a defined subset of those colors to establish its unique presence while respecting the broader IBM Design guidelines.</p>
+<h2 id="colors-for-watson">Colors for Watson</h2>
+<p>The colors chosen for IBM Watson are flexible and distinguish Watson as a brand across all user experiences. The colors were chosen based on color psychology to support the Watson brand attributes, reinforce Watson’s personality, and set the tone of each specific product.</p>
+<p>
+<div library-class="color-grouping--ADJECTIVES">
+  
+  
+  <div library-class="color-swatch--ATTRIBUTES">
+    <span library-class="color-swatch--swatch" style="background: #325c80"> </span>
+    <div library-class="color-swatch--info">
+      <p library-class="color-swatch--name">Blue 60</p>
+      
+      <ul library-class="color-swatch--attributes">
+        
+        <li>Trustworthy</li>
+        
+        <li>Systematic</li>
+        
+      </ul>
+      
+    </div>
+  </div>
+
+  
+  
+  <div library-class="color-swatch--ATTRIBUTES">
+    <span library-class="color-swatch--swatch" style="background: #d74108"> </span>
+    <div library-class="color-swatch--info">
+      <p library-class="color-swatch--name">Orange 50</p>
+      
+      <ul library-class="color-swatch--attributes">
+        
+        <li>Innovative</li>
+        
+        <li>Utilitarian</li>
+        
+      </ul>
+      
+    </div>
+  </div>
+
+  
+  
+  <div library-class="color-swatch--ATTRIBUTES">
+    <span library-class="color-swatch--swatch" style="background: #006d5d"> </span>
+    <div library-class="color-swatch--info">
+      <p library-class="color-swatch--name">Teal 60</p>
+      
+      <ul library-class="color-swatch--attributes">
+        
+        <li>Aware</li>
+        
+        <li>Approachable</li>
+        
+      </ul>
+      
+    </div>
+  </div>
+
+  
+</div>
+</p>
+<h2 id="choosing-a-color-palette">Choosing a Color Palette</h2>
+<p>Choose a primary color, a secondary color, and an accent color. Additional tints and shades of the chosen palette can help to unify the design. These values can add variety to a palette without additional colors. Refer to the IBM Design Language for a wider variety of colors, values, and neutrals. When choosing a background color for light or dark palettes, IBM Watson recommends using Neutral 1 and Gray 90, as opposed to pure white and black, as some users are sensitive to brightness and high contrast colors.</p>
+<p>
+<div library-class="color-grouping">
+  <p library-class="color-grouping--instructions">Choose a primary and secondary color.</p>
+  <div library-class="color-grouping--swatches">
+    
+    
+  <div library-class="color-swatch" style="background: #325c80; color: #fff;">
+    <p library-class="color-swatch--name">Blue 60</p>
+    <ul library-class="color-swatch--attributes">
+      <li>color(&#39;blue&#39;, 60)</li>
+      <li>#325c80</li>
+      <li>rgb(50, 92, 128)</li>
+    </ul>
+  </div>
+
+    
+    
+  <div library-class="color-swatch" style="background: #d74108; color: #fff;">
+    <p library-class="color-swatch--name">Orange 50</p>
+    <ul library-class="color-swatch--attributes">
+      <li>color(&#39;orange&#39;, 50)</li>
+      <li>#d74108</li>
+      <li>rgb(215, 65, 8)</li>
+    </ul>
+  </div>
+
+    
+    
+  <div library-class="color-swatch" style="background: #006d5d; color: #fff;">
+    <p library-class="color-swatch--name">Teal 60</p>
+    <ul library-class="color-swatch--attributes">
+      <li>color(&#39;teal&#39;, 60)</li>
+      <li>#006d5d</li>
+      <li>rgb(0, 109, 93)</li>
+    </ul>
+  </div>
+
+    
+  </div>
+</div>
+</p>
+<p>
+<div library-class="color-grouping">
+  <p library-class="color-grouping--instructions">Choose an accent color. Add hues as necessary.</p>
+  <div library-class="color-grouping--swatches">
+    
+    
+  <div library-class="color-swatch" style="background: #5596e6; color: #121212;">
+    <p library-class="color-swatch--name">Blue 40</p>
+    <ul library-class="color-swatch--attributes">
+      <li>color(&#39;blue&#39;, 40)</li>
+      <li>#5596e6</li>
+      <li>rgb(85, 150, 230)</li>
+    </ul>
+  </div>
+
+    
+    
+  <div library-class="color-swatch" style="background: #ff7832; color: #121212;">
+    <p library-class="color-swatch--name">Orange 30</p>
+    <ul library-class="color-swatch--attributes">
+      <li>color(&#39;orange&#39;, 30)</li>
+      <li>#ff7832</li>
+      <li>rgb(255, 120, 50)</li>
+    </ul>
+  </div>
+
+    
+    
+  <div library-class="color-swatch" style="background: #00b4a0; color: #121212;">
+    <p library-class="color-swatch--name">Teal 40</p>
+    <ul library-class="color-swatch--attributes">
+      <li>color(&#39;teal&#39;, 40)</li>
+      <li>#00b4a0</li>
+      <li>rgb(0, 180, 160)</li>
+    </ul>
+  </div>
+
+    
+    
+  <div library-class="color-swatch" style="background: #efc100; color: #121212;">
+    <p library-class="color-swatch--name">Yellow 30</p>
+    <ul library-class="color-swatch--attributes">
+      <li>color(&#39;yellow&#39;, 30)</li>
+      <li>#efc100</li>
+      <li>rgb(239, 193, 0)</li>
+    </ul>
+  </div>
+
+    
+  </div>
+</div>
+</p>
+<p>
+<div library-class="color-grouping">
+  <p library-class="color-grouping--instructions">Choose supporting grays and neutrals.</p>
+  <div library-class="color-grouping--swatches">
+    
+    
+  <div library-class="color-swatch" style="background: #121212; color: #fff;">
+    <p library-class="color-swatch--name">Gray 90</p>
+    <ul library-class="color-swatch--attributes">
+      <li>color(&#39;gray&#39;, 90)</li>
+      <li>#121212</li>
+      <li>rgb(18, 18, 18)</li>
+    </ul>
+  </div>
+
+    
+    
+  <div library-class="color-swatch" style="background: #323232; color: #fff;">
+    <p library-class="color-swatch--name">Gray 80</p>
+    <ul library-class="color-swatch--attributes">
+      <li>color(&#39;gray&#39;, 80)</li>
+      <li>#323232</li>
+      <li>rgb(50, 50, 50)</li>
+    </ul>
+  </div>
+
+    
+    
+  <div library-class="color-swatch" style="background: #5a5a5a; color: #fff;">
+    <p library-class="color-swatch--name">Gray 60</p>
+    <ul library-class="color-swatch--attributes">
+      <li>color(&#39;gray&#39;, 60)</li>
+      <li>#5a5a5a</li>
+      <li>rgb(90, 90, 90)</li>
+    </ul>
+  </div>
+
+    
+    
+  <div library-class="color-swatch" style="background: #777677; color: #fff;">
+    <p library-class="color-swatch--name">Gray 50</p>
+    <ul library-class="color-swatch--attributes">
+      <li>color(&#39;gray&#39;, 50)</li>
+      <li>#777677</li>
+      <li>rgb(119, 118, 119)</li>
+    </ul>
+  </div>
+
+    
+    
+  <div library-class="color-swatch" style="background: #aeaeae; color: #121212;">
+    <p library-class="color-swatch--name">Gray 30</p>
+    <ul library-class="color-swatch--attributes">
+      <li>color(&#39;gray&#39;, 30)</li>
+      <li>#aeaeae</li>
+      <li>rgb(174, 174, 174)</li>
+    </ul>
+  </div>
+
+    
+    
+  <div library-class="color-swatch" style="background: #e0e0e0; color: #121212;">
+    <p library-class="color-swatch--name">Gray 10</p>
+    <ul library-class="color-swatch--attributes">
+      <li>color(&#39;gray&#39;, 10)</li>
+      <li>#e0e0e0</li>
+      <li>rgb(224, 224, 224)</li>
+    </ul>
+  </div>
+
+    
+    
+  <div library-class="color-swatch" style="background: #ececec; color: #121212;">
+    <p library-class="color-swatch--name">Neutral-White 40</p>
+    <ul library-class="color-swatch--attributes">
+      <li>color(&#39;neutral-white&#39;, 40)</li>
+      <li>#ececec</li>
+      <li>rgb(236, 236, 236)</li>
+    </ul>
+  </div>
+
+    
+    
+  <div library-class="color-swatch" style="background: #f9f9f9; color: #121212;">
+    <p library-class="color-swatch--name">Neutral-White 20</p>
+    <ul library-class="color-swatch--attributes">
+      <li>color(&#39;neutral-white&#39;, 20)</li>
+      <li>#f9f9f9</li>
+      <li>rgb(249, 249, 249)</li>
+    </ul>
+  </div>
+
+    
+    
+  <div library-class="color-swatch" style="background: #fdfdfd; color: #121212;">
+    <p library-class="color-swatch--name">Neutral-White 10</p>
+    <ul library-class="color-swatch--attributes">
+      <li>color(&#39;neutral-white&#39;, 10)</li>
+      <li>#fdfdfd</li>
+      <li>rgb(253, 253, 253)</li>
+    </ul>
+  </div>
+
+    
+  </div>
+</div>
+</p>
+<h2 id="applying-a-color-palette">Applying a Color Palette</h2>
+<p>Color is a powerful communication tool that helps determine hierarchy on a page. Use ample white space and neutrals to create balance and to direct users’ attention.</p>
+<p>
+<div library-class="example--LARGE">
+  
+  <div library-class="media">
+    
+      <img library-class="media--image" src="/images/color/light-palette.svg" alt="Example: Light Palette">
+    
+  </div>
+
+  <div library-class="example--body">
+    
+  <p library-class="example--title">
+  
+Example: Light Palette</p>
+
+    
+      <div library-class="example--description"><p>Primary: Blue 60, Secondary: Orange 50, Accent: Teal 40</p>
+<p>Consider users who are sensitive to brightness and high contrast colors by using a neutral value as a background color instead of pure white.</p>
+</div>
+    
+  </div>
+</div>
+</p>
+<p>
+<div library-class="example--LARGE">
+  
+  <div library-class="media">
+    
+      <img library-class="media--image" src="/images/color/dark-palette.svg" alt="Example: Dark Palette">
+    
+  </div>
+
+  <div library-class="example--body">
+    
+  <p library-class="example--title">
+  
+Example: Dark Palette</p>
+
+    
+      <div library-class="example--description"><p>Primary: Blue 30, Secondary: Orange 30, Accent: Teal 30</p>
+<p>Consider users who are sensitive to brightness and high contrast colors by using a gray value as a background color instead of pure black.</p>
+</div>
+    
+  </div>
+</div>
+</p>
+</div>

@@ -1,0 +1,64 @@
+---
+name: Radio Button
+description: A form field option where only one choice may be selected
+displayTemplate: pattern
+applicationMethods:
+  - code: .base--radio
+    description: Add this class to an element
+  - code: '.base--STYLED input[type="radio"]'
+    description: '`<input type="radio">` tag inside a class of `.base--STYLED`'
+  - code: '%base--radio'
+    description: Extend this silent selector through Sass
+settings:
+  - setting: input border width
+    description: Color of radio border
+variables:
+  radio:
+    id: rb1
+    label: Option 1
+---
+<article library-class="pattern">
+  <p library-class="pattern--description">A form field option where only one choice may be selected</p>
+  <div library-class="pattern--rendered">
+    <input role="radio" class="base--radio" type="radio" id="rb1" name="rb" value="">
+<label class="base--inline-label" for="rb1">Option 1</label>
+</div>
+  <div library-class="pattern--code">
+    <pre><code class="language-markup">&lt;input role=&quot;radio&quot; class=&quot;base--radio&quot; type=&quot;radio&quot; id=&quot;rb1&quot; name=&quot;rb&quot; value=&quot;&quot;&gt;
+&lt;label class=&quot;base--inline-label&quot; for=&quot;rb1&quot;&gt;Option 1&lt;/label&gt;
+</code></pre>
+  </div>
+  <div library-class="pattern--readme" class="base--STYLED">
+    <p>A single radio button, <code>&lt;input type=[&quot;radio&quot;]&gt;</code>, is an individual form field in which only one of the given options may be chosen. In order to allow efficient screen reader use, an aria-role of “radio” (or “radiomenuitem” if it is part of a menu selection) should be included: <code>role=&quot;radio&quot;</code>.</p>
+</div>
+  <aside library-class="pattern--application">
+    <header library-class="pattern--header" class="base--h3">
+      <h3>Application Methods</h3>
+    </header>
+    <ul class="base--ul">
+      
+      <li class="base--li"><code class="base--code">.base--radio</code> - <span library-class="pattern--inline-description" class="base--STYLED"><p>Add this class to an element</p>
+</span></li>
+      
+      <li class="base--li"><code class="base--code">.base--STYLED input[type=&quot;radio&quot;]</code> - <span library-class="pattern--inline-description" class="base--STYLED"><p><code>&lt;input type=&quot;radio&quot;&gt;</code> tag inside a class of <code>.base--STYLED</code></p>
+</span></li>
+      
+      <li class="base--li"><code class="base--code">%base--radio</code> - <span library-class="pattern--inline-description" class="base--STYLED"><p>Extend this silent selector through Sass</p>
+</span></li>
+      
+    </ul>
+  </aside>
+  <aside library-class="pattern--settings">
+    <header library-class="pattern--header" class="base--h3">
+      <h3>Settings</h3>
+    </header>
+    <ul class="base--ul">
+      
+      <li class="base--li"><code class="base--code">input border width</code> - <span library-class="pattern--inline-description" class="base--STYLED"><p>Color of radio border</p>
+</span></li>
+      
+    </ul>
+</aside>
+</article>
+
+

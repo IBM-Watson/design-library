@@ -1,0 +1,67 @@
+---
+name: Loading Indicator
+description: A loader for when Watson is thinking
+displayTemplate: pattern
+applicationMethods:
+  - code: loading-indicator.svg
+    description: Move to Images folder
+  - code: loading-indicator.gif
+    description: Move to Images folder
+  - code: svg-smil
+    description: 'Either include the included Modernizr JavaScript file, or add a check for `svg-smil` to your custom Modernizr build (or similar feature detection suite)'
+---
+<article library-class="pattern">
+  <p library-class="pattern--description">A loader for when Watson is thinking</p>
+  <div library-class="pattern--rendered">
+    <div class="loader">
+  <object type="image/svg+xml" data="images/loading-indicator.svg" class="loader--svg"> </object>
+  <div class="loader--fallback"><img src="images/loading-indicator.gif" width="100%" alt=""> </div>
+</div>
+</div>
+  <div library-class="pattern--code">
+    <pre><code class="language-markup">&lt;div class=&quot;loader&quot;&gt;
+  &lt;object type=&quot;image/svg+xml&quot; data=&quot;images/loading-indicator.svg&quot; class=&quot;loader--svg&quot;&gt; &lt;/object&gt;
+  &lt;div class=&quot;loader--fallback&quot;&gt;&lt;img src=&quot;images/loading-indicator.gif&quot; width=&quot;100%&quot; alt=&quot;&quot;&gt; &lt;/div&gt;
+&lt;/div&gt;
+</code></pre>
+  </div>
+  <div library-class="pattern--readme" class="base--STYLED">
+    <p>The loading indicator should be used whenever Watson is processing information.</p>
+<h2 id="svg-animations">SVG Animations</h2>
+<p>SVG and Gif fallback animations are housed in the <code>images</code> folder.</p>
+<ul>
+<li>All of the animation is stored in the SVG file. There are 2 types of animations in the SVG file:<ul>
+<li><code>SMIL</code>- Animates the smaller elements, like strokes and dots animating </li>
+<li><code>CSS</code> - Animates the larger elements, like scaling the entire SVG</li>
+</ul>
+</li>
+</ul>
+</div>
+  <aside library-class="pattern--application">
+    <header library-class="pattern--header" class="base--h3">
+      <h3>Application Methods</h3>
+    </header>
+    <ul class="base--ul">
+      
+      <li class="base--li"><code class="base--code">loading-indicator.svg</code> - <span library-class="pattern--inline-description" class="base--STYLED"><p>Move to Images folder</p>
+</span></li>
+      
+      <li class="base--li"><code class="base--code">loading-indicator.gif</code> - <span library-class="pattern--inline-description" class="base--STYLED"><p>Move to Images folder</p>
+</span></li>
+      
+      <li class="base--li"><code class="base--code">svg-smil</code> - <span library-class="pattern--inline-description" class="base--STYLED"><p>Either include the included Modernizr JavaScript file, or add a check for <code>svg-smil</code> to your custom Modernizr build (or similar feature detection suite)</p>
+</span></li>
+      
+    </ul>
+  </aside>
+  <aside library-class="pattern--settings">
+    <header library-class="pattern--header" class="base--h3">
+      <h3>Settings</h3>
+    </header>
+    <ul class="base--ul">
+      
+    </ul>
+</aside>
+</article>
+
+

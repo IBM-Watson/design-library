@@ -1,0 +1,87 @@
+---
+name: Select Box
+description: A flexible and configurable way of selecting an individual item from a list
+displayTemplate: pattern
+applicationMethods:
+  - code: .base--select
+    description: Add this class to an element
+  - code: .base--STYLED select
+    description: '`<select>` tag inside a class of `.base--STYLED`'
+  - code: '%base--select'
+    description: Extend this silent selector through Sass
+settings:
+  - setting: input padding
+    description: Padding of input box
+  - setting: input border width
+    description: Border width of input box
+  - setting: input border color
+    description: Color of input box border and downward triangle
+  - setting: background color
+    description: Background color of input box
+variables:
+  textarea:
+    rows: 10
+    cols: 30
+    id: txtarea1
+    name: text-area
+---
+<article library-class="pattern">
+  <p library-class="pattern--description">A flexible and configurable way of selecting an individual item from a list</p>
+  <div library-class="pattern--rendered">
+    <select name="pick-a-value" id="any-value" class="base--select">
+  <option value="value1">Value 1</option>
+  <option value="value2">Value 2</option>
+  <option value="value3">Value 3</option>
+</select>
+</div>
+  <div library-class="pattern--code">
+    <pre><code class="language-markup">&lt;select name=&quot;pick-a-value&quot; id=&quot;any-value&quot; class=&quot;base--select&quot;&gt;
+  &lt;option value=&quot;value1&quot;&gt;Value 1&lt;/option&gt;
+  &lt;option value=&quot;value2&quot;&gt;Value 2&lt;/option&gt;
+  &lt;option value=&quot;value3&quot;&gt;Value 3&lt;/option&gt;
+&lt;/select&gt;
+</code></pre>
+  </div>
+  <div library-class="pattern--readme" class="base--STYLED">
+    <p>A flexible and configurable way of selecting an individual item from a list. Lists should be kept as short as possible.</p>
+</div>
+  <aside library-class="pattern--application">
+    <header library-class="pattern--header" class="base--h3">
+      <h3>Application Methods</h3>
+    </header>
+    <ul class="base--ul">
+      
+      <li class="base--li"><code class="base--code">.base--select</code> - <span library-class="pattern--inline-description" class="base--STYLED"><p>Add this class to an element</p>
+</span></li>
+      
+      <li class="base--li"><code class="base--code">.base--STYLED select</code> - <span library-class="pattern--inline-description" class="base--STYLED"><p><code>&lt;select&gt;</code> tag inside a class of <code>.base--STYLED</code></p>
+</span></li>
+      
+      <li class="base--li"><code class="base--code">%base--select</code> - <span library-class="pattern--inline-description" class="base--STYLED"><p>Extend this silent selector through Sass</p>
+</span></li>
+      
+    </ul>
+  </aside>
+  <aside library-class="pattern--settings">
+    <header library-class="pattern--header" class="base--h3">
+      <h3>Settings</h3>
+    </header>
+    <ul class="base--ul">
+      
+      <li class="base--li"><code class="base--code">input padding</code> - <span library-class="pattern--inline-description" class="base--STYLED"><p>Padding of input box</p>
+</span></li>
+      
+      <li class="base--li"><code class="base--code">input border width</code> - <span library-class="pattern--inline-description" class="base--STYLED"><p>Border width of input box</p>
+</span></li>
+      
+      <li class="base--li"><code class="base--code">input border color</code> - <span library-class="pattern--inline-description" class="base--STYLED"><p>Color of input box border and downward triangle</p>
+</span></li>
+      
+      <li class="base--li"><code class="base--code">background color</code> - <span library-class="pattern--inline-description" class="base--STYLED"><p>Background color of input box</p>
+</span></li>
+      
+    </ul>
+</aside>
+</article>
+
+

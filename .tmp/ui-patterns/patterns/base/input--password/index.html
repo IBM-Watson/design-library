@@ -1,0 +1,109 @@
+---
+name: Input - Password
+description: Password input field for a form
+displayTemplate: pattern
+applicationMethods:
+  - code: .base--password-input
+    description: Add this class to an element
+  - code: '.base--STYLED input[type="password"]'
+    description: '`<input type="password">` tag inside a class of `.base--STYLED`'
+  - code: '%base--password-input'
+    description: Extend this silent selector through Sass
+settings:
+  - setting: input padding
+    description: Padding of input box
+  - setting: input border width
+    description: Border width of input box
+  - setting: input border color
+    description: Color of input box border
+  - setting: background color
+    description: Background color of input box
+variables:
+  inputs:
+    basic:
+      label: Basic Password Input
+      type: password
+    placeholder:
+      label: Placeholder Password
+      type: password
+      placeholder: This is placeholder password
+    disabled:
+      label: Disabled Password Input
+      type: password
+      placeholder: "Can't touch this"
+      disabled: true
+---
+<article library-class="pattern">
+  <p library-class="pattern--description">Password input field for a form</p>
+  <div library-class="pattern--rendered">
+    
+<!-- {% pattern input from base %} -->
+<label class="base--block-label" for="input1">Basic Password Input</label>
+<input type="password" id="input1"   class="base--password-input" ></input>
+
+<label class="base--block-label" for="input2">Placeholder Password</label>
+<input type="password" id="input2" placeholder="This is placeholder password"   class="base--password-input" ></input>
+
+<label class="base--block-label" for="input3">Disabled Password Input</label>
+<input type="password" id="input3" placeholder="Can&#39;t touch this"   class="base--password-input" disabled></input>
+<!-- {% end pattern input from base %} -->
+
+</div>
+  <div library-class="pattern--code">
+    <pre><code class="language-markup">
+&lt;!-- {% pattern input from base %} --&gt;
+&lt;label class=&quot;base--block-label&quot; for=&quot;input1&quot;&gt;Basic Password Input&lt;/label&gt;
+&lt;input type=&quot;password&quot; id=&quot;input1&quot;   class=&quot;base--password-input&quot; &gt;&lt;/input&gt;
+
+&lt;label class=&quot;base--block-label&quot; for=&quot;input2&quot;&gt;Placeholder Password&lt;/label&gt;
+&lt;input type=&quot;password&quot; id=&quot;input2&quot; placeholder=&quot;This is placeholder password&quot;   class=&quot;base--password-input&quot; &gt;&lt;/input&gt;
+
+&lt;label class=&quot;base--block-label&quot; for=&quot;input3&quot;&gt;Disabled Password Input&lt;/label&gt;
+&lt;input type=&quot;password&quot; id=&quot;input3&quot; placeholder=&quot;Can&#39;t touch this&quot;   class=&quot;base--password-input&quot; disabled&gt;&lt;/input&gt;
+&lt;!-- {% end pattern input from base %} --&gt;
+
+</code></pre>
+  </div>
+  <div library-class="pattern--readme" class="base--STYLED">
+    <p>Basic password input for a form.</p>
+</div>
+  <aside library-class="pattern--application">
+    <header library-class="pattern--header" class="base--h3">
+      <h3>Application Methods</h3>
+    </header>
+    <ul class="base--ul">
+      
+      <li class="base--li"><code class="base--code">.base--password-input</code> - <span library-class="pattern--inline-description" class="base--STYLED"><p>Add this class to an element</p>
+</span></li>
+      
+      <li class="base--li"><code class="base--code">.base--STYLED input[type=&quot;password&quot;]</code> - <span library-class="pattern--inline-description" class="base--STYLED"><p><code>&lt;input type=&quot;password&quot;&gt;</code> tag inside a class of <code>.base--STYLED</code></p>
+</span></li>
+      
+      <li class="base--li"><code class="base--code">%base--password-input</code> - <span library-class="pattern--inline-description" class="base--STYLED"><p>Extend this silent selector through Sass</p>
+</span></li>
+      
+    </ul>
+  </aside>
+  <aside library-class="pattern--settings">
+    <header library-class="pattern--header" class="base--h3">
+      <h3>Settings</h3>
+    </header>
+    <ul class="base--ul">
+      
+      <li class="base--li"><code class="base--code">input padding</code> - <span library-class="pattern--inline-description" class="base--STYLED"><p>Padding of input box</p>
+</span></li>
+      
+      <li class="base--li"><code class="base--code">input border width</code> - <span library-class="pattern--inline-description" class="base--STYLED"><p>Border width of input box</p>
+</span></li>
+      
+      <li class="base--li"><code class="base--code">input border color</code> - <span library-class="pattern--inline-description" class="base--STYLED"><p>Color of input box border</p>
+</span></li>
+      
+      <li class="base--li"><code class="base--code">background color</code> - <span library-class="pattern--inline-description" class="base--STYLED"><p>Background color of input box</p>
+</span></li>
+      
+    </ul>
+</aside>
+</article>
+
+

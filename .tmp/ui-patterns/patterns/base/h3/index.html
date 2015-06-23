@@ -1,0 +1,61 @@
+---
+name: Heading Level 3
+description: Third level heading within an associated section
+displayTemplate: pattern
+applicationMethods:
+  - code: .base--h3
+    description: Add this class to an element
+  - code: .base--STYLED h3
+    description: '`<h3>` tag inside a class of `.base--STYLED`'
+  - code: '%base--h3'
+    description: Extend this silent selector through Sass
+settings:
+  - setting: large typography breakpoint
+    description: Breakpoint to move from smaller to larger typography
+variables:
+  header:
+    text: Header 3
+---
+<article library-class="pattern">
+  <p library-class="pattern--description">Third level heading within an associated section</p>
+  <div library-class="pattern--rendered">
+    <h3 class="base--h3">Header 3</h3>
+</div>
+  <div library-class="pattern--code">
+    <pre><code class="language-markup">&lt;h3 class=&quot;base--h3&quot;&gt;Header 3&lt;/h3&gt;
+</code></pre>
+  </div>
+  <div library-class="pattern--readme" class="base--STYLED">
+    <p>Heading Level 3, <code>&lt;h3&gt;</code>, is a third level heading within an associated section</p>
+</div>
+  <aside library-class="pattern--application">
+    <header library-class="pattern--header" class="base--h3">
+      <h3>Application Methods</h3>
+    </header>
+    <ul class="base--ul">
+      
+      <li class="base--li"><code class="base--code">.base--h3</code> - <span library-class="pattern--inline-description" class="base--STYLED"><p>Add this class to an element</p>
+</span></li>
+      
+      <li class="base--li"><code class="base--code">.base--STYLED h3</code> - <span library-class="pattern--inline-description" class="base--STYLED"><p><code>&lt;h3&gt;</code> tag inside a class of <code>.base--STYLED</code></p>
+</span></li>
+      
+      <li class="base--li"><code class="base--code">%base--h3</code> - <span library-class="pattern--inline-description" class="base--STYLED"><p>Extend this silent selector through Sass</p>
+</span></li>
+      
+    </ul>
+  </aside>
+  <aside library-class="pattern--settings">
+    <header library-class="pattern--header" class="base--h3">
+      <h3>Settings</h3>
+    </header>
+    <ul class="base--ul">
+      
+      <li class="base--li"><code class="base--code">large typography breakpoint</code> - <span library-class="pattern--inline-description" class="base--STYLED"><p>Breakpoint to move from smaller to larger typography</p>
+</span></li>
+      
+    </ul>
+</aside>
+</article>
+
+

@@ -72,11 +72,11 @@ variables:
       - palette: Gray
         tone: 10
       - palette: Neutral-White
-        tone: 40
+        tone: 4
       - palette: Neutral-White
-        tone: 20
+        tone: 2
       - palette: Neutral-White
-        tone: 10
+        tone: 1
 ---
 
 Color is a crucial component of visual vernacular, helping to unify the look and feel of all communications. The [IBM Design Language](http://www.ibm.com/design/language/framework/visual/color.shtml) comprises a wide spectrum of colors; IBM Watson relies on a defined subset of those colors to establish its unique presence while respecting the broader IBM Design guidelines.

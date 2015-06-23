@@ -1,0 +1,86 @@
+---
+name: Button
+description: A button element to trigger an action
+displayTemplate: pattern
+applicationMethods:
+  - code: .base--button
+    description: Add this class to an element
+  - code: .base--STYLED button
+    description: '`<button>` tag inside a class of `.base--STYLED`'
+  - code: '%base--button'
+    description: Extend this silent selector through Sass
+settings:
+  - setting: secondary color
+    description: Background color of button
+  - setting: white
+    description: Text color of button
+variables:
+  buttons:
+    basic:
+      label: Click Me
+      type: button
+    submit:
+      label: Submit
+      type: submit
+    reset:
+      label: Reset
+      type: reset
+---
+<article library-class="pattern">
+  <p library-class="pattern--description">A button element to trigger an action</p>
+  <div library-class="pattern--rendered">
+    <button class="base--button" type="button"> Click Me</button>
+
+<button class="base--button" type="submit"> Submit</button>
+
+<button class="base--button" type="reset"> Reset</button>
+
+
+</div>
+  <div library-class="pattern--code">
+    <pre><code class="language-markup">&lt;button class=&quot;base--button&quot; type=&quot;button&quot;&gt; Click Me&lt;/button&gt;
+
+&lt;button class=&quot;base--button&quot; type=&quot;submit&quot;&gt; Submit&lt;/button&gt;
+
+&lt;button class=&quot;base--button&quot; type=&quot;reset&quot;&gt; Reset&lt;/button&gt;
+
+
+</code></pre>
+  </div>
+  <div library-class="pattern--readme" class="base--STYLED">
+    <p>Button, <code>&lt;button&gt;</code>, is an element which may serve as a trigger to an action. Submit buttons are linked to forms and push the data from the form to the server. Reset buttons will clear any inputs.</p>
+</div>
+  <aside library-class="pattern--application">
+    <header library-class="pattern--header" class="base--h3">
+      <h3>Application Methods</h3>
+    </header>
+    <ul class="base--ul">
+      
+      <li class="base--li"><code class="base--code">.base--button</code> - <span library-class="pattern--inline-description" class="base--STYLED"><p>Add this class to an element</p>
+</span></li>
+      
+      <li class="base--li"><code class="base--code">.base--STYLED button</code> - <span library-class="pattern--inline-description" class="base--STYLED"><p><code>&lt;button&gt;</code> tag inside a class of <code>.base--STYLED</code></p>
+</span></li>
+      
+      <li class="base--li"><code class="base--code">%base--button</code> - <span library-class="pattern--inline-description" class="base--STYLED"><p>Extend this silent selector through Sass</p>
+</span></li>
+      
+    </ul>
+  </aside>
+  <aside library-class="pattern--settings">
+    <header library-class="pattern--header" class="base--h3">
+      <h3>Settings</h3>
+    </header>
+    <ul class="base--ul">
+      
+      <li class="base--li"><code class="base--code">secondary color</code> - <span library-class="pattern--inline-description" class="base--STYLED"><p>Background color of button</p>
+</span></li>
+      
+      <li class="base--li"><code class="base--code">white</code> - <span library-class="pattern--inline-description" class="base--STYLED"><p>Text color of button</p>
+</span></li>
+      
+    </ul>
+</aside>
+</article>
+
+

@@ -1,0 +1,81 @@
+---
+name: Textarea
+description: A flexible and configurable area for a long-form text input
+displayTemplate: pattern
+applicationMethods:
+  - code: .base--textarea
+    description: Add this class to an element
+  - code: .base--STYLED textarea
+    description: '`<textarea>` tag inside a class of `.base--STYLED`'
+  - code: '%base--textarea'
+    description: Extend this silent selector through Sass
+settings:
+  - setting: input padding
+    description: Padding of textarea
+  - setting: input border width
+    description: Border width of textarea
+  - setting: input border color
+    description: Color of textarea border
+  - setting: background color
+    description: Background color of textarea
+variables:
+  textarea:
+    rows: 10
+    cols: 30
+    id: txtarea1
+    name: text-area
+---
+<article library-class="pattern">
+  <p library-class="pattern--description">A flexible and configurable area for a long-form text input</p>
+  <div library-class="pattern--rendered">
+    <label class="base--block-label" for="txtarea1">Textarea:</label>
+<textarea class="base--textarea" name="text-area" id="txtarea1" cols="30" rows="10"></textarea>
+</div>
+  <div library-class="pattern--code">
+    <pre><code class="language-markup">&lt;label class=&quot;base--block-label&quot; for=&quot;txtarea1&quot;&gt;Textarea:&lt;/label&gt;
+&lt;textarea class=&quot;base--textarea&quot; name=&quot;text-area&quot; id=&quot;txtarea1&quot; cols=&quot;30&quot; rows=&quot;10&quot;&gt;&lt;/textarea&gt;
+</code></pre>
+  </div>
+  <div library-class="pattern--readme" class="base--STYLED">
+    <p>A flexible and configurable area for a long-form text input.</p>
+</div>
+  <aside library-class="pattern--application">
+    <header library-class="pattern--header" class="base--h3">
+      <h3>Application Methods</h3>
+    </header>
+    <ul class="base--ul">
+      
+      <li class="base--li"><code class="base--code">.base--textarea</code> - <span library-class="pattern--inline-description" class="base--STYLED"><p>Add this class to an element</p>
+</span></li>
+      
+      <li class="base--li"><code class="base--code">.base--STYLED textarea</code> - <span library-class="pattern--inline-description" class="base--STYLED"><p><code>&lt;textarea&gt;</code> tag inside a class of <code>.base--STYLED</code></p>
+</span></li>
+      
+      <li class="base--li"><code class="base--code">%base--textarea</code> - <span library-class="pattern--inline-description" class="base--STYLED"><p>Extend this silent selector through Sass</p>
+</span></li>
+      
+    </ul>
+  </aside>
+  <aside library-class="pattern--settings">
+    <header library-class="pattern--header" class="base--h3">
+      <h3>Settings</h3>
+    </header>
+    <ul class="base--ul">
+      
+      <li class="base--li"><code class="base--code">input padding</code> - <span library-class="pattern--inline-description" class="base--STYLED"><p>Padding of textarea</p>
+</span></li>
+      
+      <li class="base--li"><code class="base--code">input border width</code> - <span library-class="pattern--inline-description" class="base--STYLED"><p>Border width of textarea</p>
+</span></li>
+      
+      <li class="base--li"><code class="base--code">input border color</code> - <span library-class="pattern--inline-description" class="base--STYLED"><p>Color of textarea border</p>
+</span></li>
+      
+      <li class="base--li"><code class="base--code">background color</code> - <span library-class="pattern--inline-description" class="base--STYLED"><p>Background color of textarea</p>
+</span></li>
+      
+    </ul>
+</aside>
+</article>
+
+
