@@ -6,6 +6,7 @@ variables:
     quoteOne:
       quote: "Grids do not exist in a vacuum. They exist in relation to the content. We never start with a grid. We start with an idea which is then translated into a form, a structure."
       citation: "Linda van Deursen"
+      linkToSource: "http://alistapart.com/article/content-out-layout"
     quoteTwo:
       quote: "A ratio-based, modular approach to grids allows us to navigate a medium where we cannot know the container size, nor what type of content will flow into that container."
       citation: "Nathan Ford"
