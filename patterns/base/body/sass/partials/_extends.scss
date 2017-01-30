@@ -1,5 +1,5 @@
 %body--typography {
   @extend %font--sans;
-  @extend %base--font-weight;
+  @extend %base--font-weight !optional;
   line-height: 1.5;
 }
